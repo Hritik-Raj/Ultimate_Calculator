@@ -28,12 +28,12 @@ struct MainConvertorView: View {
             
             VStack (spacing: 6){
                 
-                Text(helper())
+                Text("lol")
                 .font(.system(size: 40))
                 .foregroundColor(.white)
 
                 ModalPresenter {
-                    ModalLink(destination: ModalViewUnit1.init(dismiss:)) {
+                    ModalLink(destination: ModalUnit1.init(dismiss:)) {
                             Button(action: {}) {
                                 Text("Unit 1")
                                 }
@@ -43,11 +43,11 @@ struct MainConvertorView: View {
                                 .background(Color.gray)
                                 .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
                     }
-                    
-                    
-                    
-                    
-                    ModalLink(destination: ModalViewUnit2.init(dismiss:)) {
+
+
+
+
+                    ModalLink(destination: ModalUnit2.init(dismiss:)) {
                             Button(action: {}) {
                                 Text("Unit 2")
                                 }
@@ -57,7 +57,7 @@ struct MainConvertorView: View {
                                 .background(Color.gray)
                                 .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
                     }
-                    
+
                 }
                 
                 Spacer()
@@ -127,106 +127,69 @@ struct MainConvertorView: View {
         }
     }
         
-        func helper() -> String{
-        
-                        if viewRouter.currenttype == "Length" {
-                            return "Length"
-                        }  else if viewRouter.currenttype == "Speed" {
-                            return "Speed"
-                        } else if viewRouter.currenttype == "Currency" {
-                            return "Currency"
-                        } else if viewRouter.currenttype == "Temperature" {
-                            return "Temperature"
-                        } else if viewRouter.currenttype == "Acceleration" {
-                            return "Acceleration"
-                        }   else if viewRouter.currenttype == "Area" {
-                            return "Area"
-                        } else if viewRouter.currenttype == "Cooking" {
-                            return "Cooking"
-                        } else if viewRouter.currenttype == "Data" {
-                            return "Data"
-                        } else if viewRouter.currenttype == "Density" {
-                            return "Density"
-                        } else if viewRouter.currenttype == "Electric Current" {
-                            return "Electric Current"
-                        } else if viewRouter.currenttype == "Energy" {
-                            return "Energy"
-                        } else if viewRouter.currenttype == "Frequency" {
-                            return "Frequency"
-                        } else if viewRouter.currenttype == "Fuel Consumption" {
-                            return "Fuel Consumption"
-                        }  else if viewRouter.currenttype == "Illuminance" {
-                            return "Illuminance"
-                        } else if viewRouter.currenttype == "Metric Prefix" {
-                            return "Metric Prefix"
-                        } else if viewRouter.currenttype == "Network Speed" {
-                            return "Network Speed"
-                        } else if viewRouter.currenttype == "Plain Angle" {
-                            return "Plain Angle"
-                        }   else if viewRouter.currenttype == "Power" {
-                            return "Power"
-                        } else if viewRouter.currenttype == "Pressure" {
-                            return "Pressure"
-                        } else if viewRouter.currenttype == "Radiation Dose" {
-                            return "Radiation Dose"
-                        } else if viewRouter.currenttype == "Radioactivity" {
-                            return "Radioactivity"
-                        }   else if viewRouter.currenttype == "Time" {
-                            return "Time"
-                        } else if viewRouter.currenttype == "Volume" {
-                            return "Volume"
-                        } else if viewRouter.currenttype == "Weight" {
-                            return "Weight"
-                        } else  {
-                            return "Base Conversions"
-                        }
-
-                }
+//        func helper() -> String{
+//
+//                        if viewRouter.currenttype == "Length" {
+//                            return "Length"
+//                        }  else if viewRouter.currenttype == "Speed" {
+//                            return "Speed"
+//                        } else if viewRouter.currenttype == "Currency" {
+//                            return "Currency"
+//                        } else if viewRouter.currenttype == "Temperature" {
+//                            return "Temperature"
+//                        } else if viewRouter.currenttype == "Acceleration" {
+//                            return "Acceleration"
+//                        }   else if viewRouter.currenttype == "Area" {
+//                            return "Area"
+//                        } else if viewRouter.currenttype == "Cooking" {
+//                            return "Cooking"
+//                        } else if viewRouter.currenttype == "Data" {
+//                            return "Data"
+//                        } else if viewRouter.currenttype == "Density" {
+//                            return "Density"
+//                        } else if viewRouter.currenttype == "Electric Current" {
+//                            return "Electric Current"
+//                        } else if viewRouter.currenttype == "Energy" {
+//                            return "Energy"
+//                        } else if viewRouter.currenttype == "Frequency" {
+//                            return "Frequency"
+//                        } else if viewRouter.currenttype == "Fuel Consumption" {
+//                            return "Fuel Consumption"
+//                        }  else if viewRouter.currenttype == "Illuminance" {
+//                            return "Illuminance"
+//                        } else if viewRouter.currenttype == "Metric Prefix" {
+//                            return "Metric Prefix"
+//                        } else if viewRouter.currenttype == "Network Speed" {
+//                            return "Network Speed"
+//                        } else if viewRouter.currenttype == "Plain Angle" {
+//                            return "Plain Angle"
+//                        }   else if viewRouter.currenttype == "Power" {
+//                            return "Power"
+//                        } else if viewRouter.currenttype == "Pressure" {
+//                            return "Pressure"
+//                        } else if viewRouter.currenttype == "Radiation Dose" {
+//                            return "Radiation Dose"
+//                        } else if viewRouter.currenttype == "Radioactivity" {
+//                            return "Radioactivity"
+//                        }   else if viewRouter.currenttype == "Time" {
+//                            return "Time"
+//                        } else if viewRouter.currenttype == "Volume" {
+//                            return "Volume"
+//                        } else if viewRouter.currenttype == "Weight" {
+//                            return "Weight"
+//                        } else  {
+//                            return "Base Conversions"
+//                        }
+//
+//                }
 }
                 
 
-
-
-struct ModalViewUnit1: View {
-    var dismiss: () -> ()
-    var body: some View {
-        
-        ZStack {
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: dismiss) {
-                        Text("Dismiss")
-                    }
-
-                }
-            }
-        }
-        
-    
-    }
-}
-
-struct ModalViewUnit2: View {
-    var dismiss: () -> ()
-    var body: some View {
-        ZStack {
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: dismiss) {
-                        Text("Dismiss")
-                    }
-
-                }
-                
-            }
-        }
-    }
-}
 
 struct MainConvertorView_Previews: PreviewProvider {
     static var previews: some View {
         MainConvertorView()
+            .environmentObject(ViewRouter())
+            .environmentObject(GlobalEnvironment())
     }
 }

@@ -91,6 +91,6 @@ struct ContentViewCustomize: View {
 
 struct ContentViewCustomize_Previews: PreviewProvider {
     static var previews: some View {
-        ContentViewCustomize()
+        ContentViewCustomize().environmentObject(ViewRouter())
     }
 }

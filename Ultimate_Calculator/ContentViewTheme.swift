@@ -121,6 +121,6 @@ struct ButtonDesignTheme: ButtonStyle {
 
 struct ContentViewTheme_Previews: PreviewProvider {
     static var previews: some View {
-        ContentViewTheme()
+        ContentViewTheme().environmentObject(ViewRouter())
     }
 }

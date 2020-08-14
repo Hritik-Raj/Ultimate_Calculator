@@ -402,6 +402,8 @@ struct ContentView: View {
             }
             else if viewRouter.currentPage == "page_main_convert" {
                 MainConvertorView()
+                    .environmentObject(ViewRouter())
+                    .environmentObject(GlobalEnvironment())
             }
             
             
