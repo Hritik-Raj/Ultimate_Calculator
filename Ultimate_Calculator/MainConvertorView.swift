@@ -8,8 +8,11 @@
 
 import SwiftUI
 import ModalView
+//import SpStorkController
 
 struct MainConvertorView: View {
+    @State var ShowUnit1 = false
+    @State var ShowUnit2 = false
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var env: GlobalEnvironment
     
@@ -28,46 +31,52 @@ struct MainConvertorView: View {
             
             VStack (spacing: 6){
                 
-                Text("lol")
+                Text(helper())
                 .font(.system(size: 40))
                 .foregroundColor(.white)
-
-                ModalPresenter {
-                    ModalLink(destination: ModalUnit1.init(dismiss:)) {
-                            Button(action: {}) {
-                                Text("Unit 1")
+                .padding(.all)
+                            Button(action: {
+                                self.ShowUnit1.toggle()
+                            }) {
+                                Text("Unit 1" + "   " + env.displayconvert)
                                 }
+                                .sheet(isPresented: $ShowUnit1) {
+                                ModalUnit1()
+                            }
                                 .font(.system(size: 40))
                                 .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
                                 .foregroundColor(.white)
                                 .background(Color.gray)
                                 .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
-                    }
+                    
 
 
 
-
-                    ModalLink(destination: ModalUnit2.init(dismiss:)) {
-                            Button(action: {}) {
+                            Button(action: {
+                                self.ShowUnit2.toggle()
+                            }) {
                                 Text("Unit 2")
                                 }
+                                .sheet(isPresented: $ShowUnit2) {
+                                ModalUnit2()
+                            }
                                 .font(.system(size: 40))
                                 .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
                                 .foregroundColor(.white)
                                 .background(Color.gray)
                                 .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
-                    }
+                    
 
-                }
+                
                 
                 Spacer()
                 
-                HStack {
-                    Spacer()
-                    Text(env.displayconvert)
-                        .foregroundColor(.white)
-                        .font(.system(size: CGFloat(env.fontsizeconvert)))
-                }.padding()
+//                HStack {
+//                    Spacer()
+//                    Text(env.displayconvert)
+//                        .foregroundColor(.white)
+//                        .font(.system(size: CGFloat(env.fontsizeconvert)))
+//                }.padding()
                 
                 
                 ForEach(buttons_normal, id: \.self) {
@@ -100,7 +109,10 @@ struct MainConvertorView: View {
                             .background(Color.gray)
                             .cornerRadius((UIScreen.main.bounds.width - 5 * 12)/4)
 
-                            Button(action: {self.viewRouter.currentPage = "page_convertor"}) {
+                            Button(action: {
+                                self.viewRouter.currentPage = "page_convertor"
+                                
+                            }) {
                             Text("Convertor")
                             }.font(.system(size: 18))
                             .frame(width: (UIScreen.main.bounds.width - 5 * 12)/4, height: ((UIScreen.main.bounds.width - 5 * 12)/4)*0.5)
@@ -108,7 +120,11 @@ struct MainConvertorView: View {
                             .background(Color.gray)
                             .cornerRadius((UIScreen.main.bounds.width - 5 * 12)/4)
 
-                            Button(action: {self.viewRouter.currentPage = "page_basic"}) {
+                            Button(action: {
+                                self.viewRouter.currentPage = "page_basic"
+                                print ("lololol")
+                                print(self.viewRouter.currentPage)
+                            }) {
                             Text("Basic")
                             }.font(.system(size: 18))
                             .frame(width: (UIScreen.main.bounds.width - 5 * 12)/4, height: ((UIScreen.main.bounds.width - 5 * 12)/4)*0.5)
@@ -127,61 +143,61 @@ struct MainConvertorView: View {
         }
     }
         
-//        func helper() -> String{
-//
-//                        if viewRouter.currenttype == "Length" {
-//                            return "Length"
-//                        }  else if viewRouter.currenttype == "Speed" {
-//                            return "Speed"
-//                        } else if viewRouter.currenttype == "Currency" {
-//                            return "Currency"
-//                        } else if viewRouter.currenttype == "Temperature" {
-//                            return "Temperature"
-//                        } else if viewRouter.currenttype == "Acceleration" {
-//                            return "Acceleration"
-//                        }   else if viewRouter.currenttype == "Area" {
-//                            return "Area"
-//                        } else if viewRouter.currenttype == "Cooking" {
-//                            return "Cooking"
-//                        } else if viewRouter.currenttype == "Data" {
-//                            return "Data"
-//                        } else if viewRouter.currenttype == "Density" {
-//                            return "Density"
-//                        } else if viewRouter.currenttype == "Electric Current" {
-//                            return "Electric Current"
-//                        } else if viewRouter.currenttype == "Energy" {
-//                            return "Energy"
-//                        } else if viewRouter.currenttype == "Frequency" {
-//                            return "Frequency"
-//                        } else if viewRouter.currenttype == "Fuel Consumption" {
-//                            return "Fuel Consumption"
-//                        }  else if viewRouter.currenttype == "Illuminance" {
-//                            return "Illuminance"
-//                        } else if viewRouter.currenttype == "Metric Prefix" {
-//                            return "Metric Prefix"
-//                        } else if viewRouter.currenttype == "Network Speed" {
-//                            return "Network Speed"
-//                        } else if viewRouter.currenttype == "Plain Angle" {
-//                            return "Plain Angle"
-//                        }   else if viewRouter.currenttype == "Power" {
-//                            return "Power"
-//                        } else if viewRouter.currenttype == "Pressure" {
-//                            return "Pressure"
-//                        } else if viewRouter.currenttype == "Radiation Dose" {
-//                            return "Radiation Dose"
-//                        } else if viewRouter.currenttype == "Radioactivity" {
-//                            return "Radioactivity"
-//                        }   else if viewRouter.currenttype == "Time" {
-//                            return "Time"
-//                        } else if viewRouter.currenttype == "Volume" {
-//                            return "Volume"
-//                        } else if viewRouter.currenttype == "Weight" {
-//                            return "Weight"
-//                        } else  {
-//                            return "Base Conversions"
-//                        }
-//
-//                }
+        func helper() -> String{
+
+                        if viewRouter.currenttype == "Length" {
+                            return "Length"
+                        }  else if viewRouter.currenttype == "Speed" {
+                            return "Speed"
+                        } else if viewRouter.currenttype == "Currency" {
+                            return "Currency"
+                        } else if viewRouter.currenttype == "Temperature" {
+                            return "Temperature"
+                        } else if viewRouter.currenttype == "Acceleration" {
+                            return "Acceleration"
+                        }   else if viewRouter.currenttype == "Area" {
+                            return "Area"
+                        } else if viewRouter.currenttype == "Cooking" {
+                            return "Cooking"
+                        } else if viewRouter.currenttype == "Data" {
+                            return "Data"
+                        } else if viewRouter.currenttype == "Density" {
+                            return "Density"
+                        } else if viewRouter.currenttype == "Electric Current" {
+                            return "Electric Current"
+                        } else if viewRouter.currenttype == "Energy" {
+                            return "Energy"
+                        } else if viewRouter.currenttype == "Frequency" {
+                            return "Frequency"
+                        } else if viewRouter.currenttype == "Fuel Consumption" {
+                            return "Fuel Consumption"
+                        }  else if viewRouter.currenttype == "Illuminance" {
+                            return "Illuminance"
+                        } else if viewRouter.currenttype == "Metric Prefix" {
+                            return "Metric Prefix"
+                        } else if viewRouter.currenttype == "Network Speed" {
+                            return "Network Speed"
+                        } else if viewRouter.currenttype == "Plain Angle" {
+                            return "Plain Angle"
+                        }   else if viewRouter.currenttype == "Power" {
+                            return "Power"
+                        } else if viewRouter.currenttype == "Pressure" {
+                            return "Pressure"
+                        } else if viewRouter.currenttype == "Radiation Dose" {
+                            return "Radiation Dose"
+                        } else if viewRouter.currenttype == "Radioactivity" {
+                            return "Radioactivity"
+                        }   else if viewRouter.currenttype == "Time" {
+                            return "Time"
+                        } else if viewRouter.currenttype == "Volume" {
+                            return "Volume"
+                        } else if viewRouter.currenttype == "Weight" {
+                            return "Weight"
+                        } else  {
+                            return "Base Conversions"
+                        }
+
+                }
 }
                 
 
@@ -191,5 +207,8 @@ struct MainConvertorView_Previews: PreviewProvider {
         MainConvertorView()
             .environmentObject(ViewRouter())
             .environmentObject(GlobalEnvironment())
+        
+            
+            
     }
 }

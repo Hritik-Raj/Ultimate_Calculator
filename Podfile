@@ -6,6 +6,7 @@ target 'Ultimate_Calculator' do
   use_frameworks!
   
   pod 'Expression'
+  pod 'SPStorkController'
 
   # Pods for Ultimate_Calculator
 

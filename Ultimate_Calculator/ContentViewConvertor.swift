@@ -83,7 +83,8 @@ struct ContentViewConvertor : View {
                         ForEach(buttons_convertor, id: \.self) {
                          button in HStack (spacing: 12) {
                          
-                             ConvertorOptionButtonView(button: button).environmentObject(self.viewRouter)
+                             ConvertorOptionButtonView(button: button)
+//                                .environmentObject(self.viewRouter)
                                  
                              }
                          }

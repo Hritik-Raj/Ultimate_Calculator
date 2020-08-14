@@ -9,22 +9,17 @@
 import SwiftUI
 
 struct ModalUnit1: View {
-    var dismiss: () -> ()
     var body: some View {
 
         ZStack {
             VStack {
                 HStack {
-                    Spacer()
-                    Button(action: dismiss) {
-                        Text("Dismiss")
+                    ScrollView {
+                        Text("hi")
                     }
-
                 }
             }
         }
-
-
     }
 }
 

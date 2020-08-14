@@ -388,11 +388,9 @@ struct ContentView: View {
             }
             else if viewRouter.currentPage == "page_convertor" {
             ContentViewConvertor()
-                
             }
             else if viewRouter.currentPage == "page_settings" {
                 ContentViewSettings()
-//                .transition(.scale)
             }
             else if viewRouter.currentPage == "page_theme" {
                 ContentViewTheme()
@@ -402,8 +400,6 @@ struct ContentView: View {
             }
             else if viewRouter.currentPage == "page_main_convert" {
                 MainConvertorView()
-                    .environmentObject(ViewRouter())
-                    .environmentObject(GlobalEnvironment())
             }
             
             

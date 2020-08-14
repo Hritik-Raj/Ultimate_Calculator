@@ -14,7 +14,7 @@ struct ConvertorOptionButtonView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     var body: some View {
         Button(action: {
-            self.viewRouter.currentPage = "page_main_convert"
+            self.viewRouter.currentPage = self.button.title
             self.env.displayconvert = "0"
             self.env.completestringconvert = ""
             self.handleconvertoroption(convertorButton: self.button)
@@ -47,7 +47,7 @@ struct ConvertorOptionButtonView: View {
         } else if convertorButton.title == "Energy" {
             self.viewRouter.currenttype = "Energy"
         } else if convertorButton.title == "Frequency" {
-            viewRouter.currenttype = "Frequency"
+            self.viewRouter.currenttype = "Frequency"
         } else if convertorButton.title == "Fuel Consumption" {
             self.viewRouter.currenttype = "Fuel Consumption"
         } else if convertorButton.title == "Illuminance" {

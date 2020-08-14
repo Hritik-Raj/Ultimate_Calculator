@@ -2,12 +2,39 @@
   "object": {
     "pins": [
       {
+        "package": "BottomBar-SwiftUI",
+        "repositoryURL": "https://github.com/smartvipere75/bottombar-swiftui",
+        "state": {
+          "branch": "master",
+          "revision": "838ce6316f8282467ebd00cf4d9706dc58978633",
+          "version": null
+        }
+      },
+      {
         "package": "ModalView",
         "repositoryURL": "https://github.com/diniska/modal-view",
         "state": {
           "branch": "master",
           "revision": "ad7c17cbbdf0662f3defc5bfefd6d912d458d4a4",
           "version": null
+        }
+      },
+      {
+        "package": "NeumorphismUI",
+        "repositoryURL": "https://github.com/tsuzukihashi/NeumorphismUI",
+        "state": {
+          "branch": null,
+          "revision": "b834fafbd9d0ca1f5a2b758df7ee72ad5d79197a",
+          "version": "0.4.6"
+        }
+      },
+      {
+        "package": "PanModal",
+        "repositoryURL": "https://github.com/slackhq/PanModal.git",
+        "state": {
+          "branch": null,
+          "revision": "b012aecb6b67a8e46369227f893c12544846613f",
+          "version": "1.2.7"
         }
       }
     ]

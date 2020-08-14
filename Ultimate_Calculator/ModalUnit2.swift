@@ -9,17 +9,20 @@
 import SwiftUI
 
 struct ModalUnit2: View {
-    var dismiss: () -> ()
     var body: some View {
 
         ZStack {
             VStack {
                 HStack {
-                    Spacer()
-                    Button(action: dismiss) {
-                        Text("Dismiss")
+                    ScrollView(.vertical) {
+                        VStack(spacing: 10) {
+                            ForEach(0..<100) {
+                                Text("Item \($0)")
+                                    .font(.title)
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
                     }
-
                 }
             }
         }

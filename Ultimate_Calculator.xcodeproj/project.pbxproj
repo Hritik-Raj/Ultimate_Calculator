@@ -36,6 +36,9 @@
 		55A04DA524E64DBB0044C248 /* ModalView in Frameworks */ = {isa = PBXBuildFile; productRef = 55A04DA424E64DBB0044C248 /* ModalView */; };
 		55A04DA724E6E97F0044C248 /* ModalUnit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A04DA624E6E97F0044C248 /* ModalUnit1.swift */; };
 		55A04DA924E6E9900044C248 /* ModalUnit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A04DA824E6E9900044C248 /* ModalUnit2.swift */; };
+		55A04DAC24E7123B0044C248 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 55A04DAB24E7123B0044C248 /* PanModal */; };
+		55B6AA2424E73786006520B8 /* NeumorphismUI in Frameworks */ = {isa = PBXBuildFile; productRef = 55B6AA2324E73786006520B8 /* NeumorphismUI */; };
+		55B6AA2724E73EFF006520B8 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 55B6AA2624E73EFF006520B8 /* BottomBar-SwiftUI */; };
 		855FF5B38D25C720330720F1 /* Pods_Ultimate_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA09649EFC1E1499AEBF1E06 /* Pods_Ultimate_CalculatorTests.framework */; };
 		A12AB16FC77055F97B01BD29 /* Pods_Ultimate_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6550020AEDBD3DB6436B56 /* Pods_Ultimate_Calculator.framework */; };
 /* End PBXBuildFile section */
@@ -109,6 +112,9 @@
 			files = (
 				A12AB16FC77055F97B01BD29 /* Pods_Ultimate_Calculator.framework in Frameworks */,
 				55A04DA524E64DBB0044C248 /* ModalView in Frameworks */,
+				55B6AA2424E73786006520B8 /* NeumorphismUI in Frameworks */,
+				55A04DAC24E7123B0044C248 /* PanModal in Frameworks */,
+				55B6AA2724E73EFF006520B8 /* BottomBar-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,9 +185,9 @@
 				55A04D9B24E5E4190044C248 /* ConvertorButtonCircle.swift */,
 				55A04D9F24E5FD570044C248 /* ConvertorOptionButtonView.swift */,
 				55A04DA124E632F10044C248 /* ConvertorCalculations.swift */,
-				555C5BCD24D0B774009055B4 /* Preview Content */,
 				55A04DA624E6E97F0044C248 /* ModalUnit1.swift */,
 				55A04DA824E6E9900044C248 /* ModalUnit2.swift */,
+				555C5BCD24D0B774009055B4 /* Preview Content */,
 			);
 			path = Ultimate_Calculator;
 			sourceTree = "<group>";
@@ -255,6 +261,9 @@
 			name = Ultimate_Calculator;
 			packageProductDependencies = (
 				55A04DA424E64DBB0044C248 /* ModalView */,
+				55A04DAB24E7123B0044C248 /* PanModal */,
+				55B6AA2324E73786006520B8 /* NeumorphismUI */,
+				55B6AA2624E73EFF006520B8 /* BottomBar-SwiftUI */,
 			);
 			productName = Ultimate_Calculator;
 			productReference = 555C5BC224D0B771009055B4 /* Ultimate_Calculator.app */;
@@ -333,6 +342,9 @@
 			mainGroup = 555C5BB924D0B771009055B4;
 			packageReferences = (
 				55A04DA324E64DBB0044C248 /* XCRemoteSwiftPackageReference "modal-view" */,
+				55A04DAA24E7123B0044C248 /* XCRemoteSwiftPackageReference "PanModal" */,
+				55B6AA2224E73786006520B8 /* XCRemoteSwiftPackageReference "NeumorphismUI" */,
+				55B6AA2524E73EFF006520B8 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
 			);
 			productRefGroup = 555C5BC324D0B771009055B4 /* Products */;
 			projectDirPath = "";
@@ -846,6 +858,30 @@
 				kind = branch;
 			};
 		};
+		55A04DAA24E7123B0044C248 /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.7;
+			};
+		};
+		55B6AA2224E73786006520B8 /* XCRemoteSwiftPackageReference "NeumorphismUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tsuzukihashi/NeumorphismUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.6;
+			};
+		};
+		55B6AA2524E73EFF006520B8 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -853,6 +889,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 55A04DA324E64DBB0044C248 /* XCRemoteSwiftPackageReference "modal-view" */;
 			productName = ModalView;
+		};
+		55A04DAB24E7123B0044C248 /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55A04DAA24E7123B0044C248 /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
+		};
+		55B6AA2324E73786006520B8 /* NeumorphismUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55B6AA2224E73786006520B8 /* XCRemoteSwiftPackageReference "NeumorphismUI" */;
+			productName = NeumorphismUI;
+		};
+		55B6AA2624E73EFF006520B8 /* BottomBar-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55B6AA2524E73EFF006520B8 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
+			productName = "BottomBar-SwiftUI";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
