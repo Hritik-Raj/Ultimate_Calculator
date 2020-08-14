@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C3FD7027-2005-4CCD-B316-BA1EC3A13579"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C06DEB9C-13B0-49DA-8BCF-EA1520A887D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ultimate_Calculator/MainConvertorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E81379B5-CF43-4E46-B040-C4AE3D5E2AA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ultimate_Calculator/MainConvertorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91F967E3-4BFC-45B9-A6D7-D8999401B64C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ultimate_Calculator/MainConvertorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "91F967E3-4BFC-45B9-A6D7-D8999401B64C - 2c8c5a6ba1773fe7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, ModalView.ModalPresenter&lt;SwiftUI.TupleView&lt;(ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit1&gt;, ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit2&gt;)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;&gt;, Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, SwiftUI.HStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonRounded&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonSquare&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonCircle&gt;&gt;&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.edgesIgnoringSafeArea(SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, ModalView.ModalPresenter&lt;SwiftUI.TupleView&lt;(ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit1&gt;, ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit2&gt;)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;&gt;, Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, SwiftUI.HStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonRounded&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonSquare&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonCircle&gt;&gt;&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in Ultimate_Calculator.MainConvertorView.body.getter : some"
+                  moduleName = "Ultimate_Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hritikraj/Desktop/Developer/Ultimate_Calculator/Ultimate_Calculator/MainConvertorView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "3266">
+               </Location>
+               <Location
+                  uuid = "91F967E3-4BFC-45B9-A6D7-D8999401B64C - 8ecba24ffbeae30d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 () -&gt; SwiftUI.Text in closure #4 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, ModalView.ModalPresenter&lt;SwiftUI.TupleView&lt;(ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit1&gt;, ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit2&gt;)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;&gt;, Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, SwiftUI.HStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonRounded&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonSquare&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonCircle&gt;&gt;&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.edgesIgnoringSafeArea(SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, ModalView.ModalPresenter&lt;SwiftUI.TupleView&lt;(ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit1&gt;, ModalView.ModalLink&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0, Ultimate_Calculator.ModalViewUnit2&gt;)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;&gt;, Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, SwiftUI.HStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonRounded&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonSquare&gt;&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Ultimate_Calculator.CalculatorButton&gt;, Ultimate_Calculator.CalculatorButton, Ultimate_Calculator.ConvertorButtonCircle&gt;&gt;&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt; in Ultimate_Calculator.MainConvertorView.body.getter : some"
+                  moduleName = "Ultimate_Calculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hritikraj/Desktop/Developer/Ultimate_Calculator/Ultimate_Calculator/MainConvertorView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "257">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6D1D85D-D169-46FB-AE77-6D9102170178"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ultimate_Calculator/MainConvertorView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
