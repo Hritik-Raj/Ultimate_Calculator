@@ -361,12 +361,12 @@ class ViewRouter: ObservableObject {
             objectWillChange.send(self)
         }
     }
-    
-    var currenttype: String = "Length" {
-        didSet {
-            objectWillChange.send(self)
-        }
-    }
+//
+//    var currenttype: String = "Length" {
+//        didSet {
+//            objectWillChange.send(self)
+//        }
+//    }
 }
 
 
@@ -400,6 +400,57 @@ struct ContentView: View {
             }
             else if viewRouter.currentPage == "page_main_convert" {
                 MainConvertorView()
+            }
+            else if viewRouter.currentPage == "Length" {
+                Length()
+            }  else if viewRouter.currentPage == "Speed" {
+                Speed()
+            } else if viewRouter.currentPage == "Currency" {
+                Currency()
+            } else if viewRouter.currentPage == "Temperature" {
+                Temperature()
+            } else if viewRouter.currentPage == "Acceleration" {
+                Acceleration()
+            }   else if viewRouter.currentPage == "Area" {
+                Area()
+            } else if viewRouter.currentPage == "Cooking" {
+                Cooking()
+            } else if viewRouter.currentPage == "Data" {
+                Data()
+            } else if viewRouter.currentPage == "Density" {
+                Density()
+            } else if viewRouter.currentPage == "Electric Current" {
+                Electric_Current()
+            } else if viewRouter.currentPage == "Energy" {
+                Energy()
+            } else if viewRouter.currentPage == "Frequency" {
+                Frequency()
+            } else if viewRouter.currentPage == "Fuel Consumption" {
+                Fuel_Consumption()
+            }  else if viewRouter.currentPage == "Illuminance" {
+                Illuminance()
+            } else if viewRouter.currentPage == "Metric Prefix" {
+                Metric_Prefix()
+            } else if viewRouter.currentPage == "Network Speed" {
+                Network_Speed()
+            } else if viewRouter.currentPage == "Plain Angle" {
+                Plain_Angle()
+            }   else if viewRouter.currentPage == "Power" {
+                Power()
+            } else if viewRouter.currentPage == "Pressure" {
+                Pressure()
+            } else if viewRouter.currentPage == "Radiation Dose" {
+                Radiation_Dose()
+            } else if viewRouter.currentPage == "Radioactivity" {
+                Radioactivity()
+            }  else if viewRouter.currentPage == "Time" {
+                Time()
+            } else if viewRouter.currentPage == "Volume" {
+                Volume()
+            } else if viewRouter.currentPage == "Weight" {
+                Weight()
+            } else if viewRouter.currentPage == "Base Conversions" {
+                Base_Conversions()
             }
             
             

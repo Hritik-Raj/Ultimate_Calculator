@@ -23,18 +23,16 @@ struct MainConvertorView: View {
         [.one, .two, .three, .minus],
         [.zero, .decimal, .equals, .plus]
     ]
-    
     var body: some View {
-        
         ZStack (alignment: .bottom){ Color.black
             .edgesIgnoringSafeArea(.all)
             
             VStack (spacing: 6){
                 
-                Text(helper())
-                .font(.system(size: 40))
-                .foregroundColor(.white)
-                .padding(.all)
+//                Text(helper())
+//                .font(.system(size: 40))
+//                .foregroundColor(.white)
+//                .padding(.all)
                             Button(action: {
                                 self.ShowUnit1.toggle()
                             }) {
@@ -49,9 +47,6 @@ struct MainConvertorView: View {
                                 .background(Color.gray)
                                 .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
                     
-
-
-
                             Button(action: {
                                 self.ShowUnit2.toggle()
                             }) {
@@ -65,10 +60,6 @@ struct MainConvertorView: View {
                                 .foregroundColor(.white)
                                 .background(Color.gray)
                                 .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
-                    
-
-                
-                
                 Spacer()
                 
 //                HStack {
@@ -133,71 +124,65 @@ struct MainConvertorView: View {
                             .cornerRadius((UIScreen.main.bounds.width - 5 * 12)/4)
 
                  }.foregroundColor(.white)
-        
-                
             }
-            
-            
-
-            
         }
     }
         
-        func helper() -> String{
-
-                        if viewRouter.currenttype == "Length" {
-                            return "Length"
-                        }  else if viewRouter.currenttype == "Speed" {
-                            return "Speed"
-                        } else if viewRouter.currenttype == "Currency" {
-                            return "Currency"
-                        } else if viewRouter.currenttype == "Temperature" {
-                            return "Temperature"
-                        } else if viewRouter.currenttype == "Acceleration" {
-                            return "Acceleration"
-                        }   else if viewRouter.currenttype == "Area" {
-                            return "Area"
-                        } else if viewRouter.currenttype == "Cooking" {
-                            return "Cooking"
-                        } else if viewRouter.currenttype == "Data" {
-                            return "Data"
-                        } else if viewRouter.currenttype == "Density" {
-                            return "Density"
-                        } else if viewRouter.currenttype == "Electric Current" {
-                            return "Electric Current"
-                        } else if viewRouter.currenttype == "Energy" {
-                            return "Energy"
-                        } else if viewRouter.currenttype == "Frequency" {
-                            return "Frequency"
-                        } else if viewRouter.currenttype == "Fuel Consumption" {
-                            return "Fuel Consumption"
-                        }  else if viewRouter.currenttype == "Illuminance" {
-                            return "Illuminance"
-                        } else if viewRouter.currenttype == "Metric Prefix" {
-                            return "Metric Prefix"
-                        } else if viewRouter.currenttype == "Network Speed" {
-                            return "Network Speed"
-                        } else if viewRouter.currenttype == "Plain Angle" {
-                            return "Plain Angle"
-                        }   else if viewRouter.currenttype == "Power" {
-                            return "Power"
-                        } else if viewRouter.currenttype == "Pressure" {
-                            return "Pressure"
-                        } else if viewRouter.currenttype == "Radiation Dose" {
-                            return "Radiation Dose"
-                        } else if viewRouter.currenttype == "Radioactivity" {
-                            return "Radioactivity"
-                        }   else if viewRouter.currenttype == "Time" {
-                            return "Time"
-                        } else if viewRouter.currenttype == "Volume" {
-                            return "Volume"
-                        } else if viewRouter.currenttype == "Weight" {
-                            return "Weight"
-                        } else  {
-                            return "Base Conversions"
-                        }
-
-                }
+//        func helper() -> String{
+//
+//                        if viewRouter.currenttype == "Length" {
+//                            return "Length"
+//                        }  else if viewRouter.currenttype == "Speed" {
+//                            return "Speed"
+//                        } else if viewRouter.currenttype == "Currency" {
+//                            return "Currency"
+//                        } else if viewRouter.currenttype == "Temperature" {
+//                            return "Temperature"
+//                        } else if viewRouter.currenttype == "Acceleration" {
+//                            return "Acceleration"
+//                        }   else if viewRouter.currenttype == "Area" {
+//                            return "Area"
+//                        } else if viewRouter.currenttype == "Cooking" {
+//                            return "Cooking"
+//                        } else if viewRouter.currenttype == "Data" {
+//                            return "Data"
+//                        } else if viewRouter.currenttype == "Density" {
+//                            return "Density"
+//                        } else if viewRouter.currenttype == "Electric Current" {
+//                            return "Electric Current"
+//                        } else if viewRouter.currenttype == "Energy" {
+//                            return "Energy"
+//                        } else if viewRouter.currenttype == "Frequency" {
+//                            return "Frequency"
+//                        } else if viewRouter.currenttype == "Fuel Consumption" {
+//                            return "Fuel Consumption"
+//                        }  else if viewRouter.currenttype == "Illuminance" {
+//                            return "Illuminance"
+//                        } else if viewRouter.currenttype == "Metric Prefix" {
+//                            return "Metric Prefix"
+//                        } else if viewRouter.currenttype == "Network Speed" {
+//                            return "Network Speed"
+//                        } else if viewRouter.currenttype == "Plain Angle" {
+//                            return "Plain Angle"
+//                        }   else if viewRouter.currenttype == "Power" {
+//                            return "Power"
+//                        } else if viewRouter.currenttype == "Pressure" {
+//                            return "Pressure"
+//                        } else if viewRouter.currenttype == "Radiation Dose" {
+//                            return "Radiation Dose"
+//                        } else if viewRouter.currenttype == "Radioactivity" {
+//                            return "Radioactivity"
+//                        }   else if viewRouter.currenttype == "Time" {
+//                            return "Time"
+//                        } else if viewRouter.currenttype == "Volume" {
+//                            return "Volume"
+//                        } else if viewRouter.currenttype == "Weight" {
+//                            return "Weight"
+//                        } else  {
+//                            return "Base Conversions"
+//                        }
+//
+//                }
 }
                 
 
