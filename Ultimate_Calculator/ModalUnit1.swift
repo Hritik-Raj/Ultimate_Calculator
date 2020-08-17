@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ModalUnit1: View {
     var body: some View {
-
+        
         ZStack {
             VStack {
                 HStack {

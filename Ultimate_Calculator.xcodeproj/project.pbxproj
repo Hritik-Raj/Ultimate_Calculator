@@ -64,6 +64,32 @@
 		55B6AA5724E74A9F006520B8 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5624E74A9F006520B8 /* Weight.swift */; };
 		55B6AA5924E74AB2006520B8 /* Base_Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5824E74AB2006520B8 /* Base_Conversions.swift */; };
 		55B6AA5B24E75083006520B8 /* Plain_Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5A24E75083006520B8 /* Plain_Angle.swift */; };
+		55B6AA5D24E7B08A006520B8 /* ModalAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5C24E7B08A006520B8 /* ModalAcceleration.swift */; };
+		55B6AA5F24E7B09A006520B8 /* ModalArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5E24E7B09A006520B8 /* ModalArea.swift */; };
+		55B6AA6124E7B0B1006520B8 /* ModalCooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6024E7B0B1006520B8 /* ModalCooking.swift */; };
+		55B6AA6324E7B0C2006520B8 /* ModalCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6224E7B0C2006520B8 /* ModalCurrency.swift */; };
+		55B6AA6524E7B0D6006520B8 /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6424E7B0D6006520B8 /* ModalData.swift */; };
+		55B6AA6724E7B10D006520B8 /* ModalDensity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6624E7B10D006520B8 /* ModalDensity.swift */; };
+		55B6AA6924E7B146006520B8 /* ModalElectric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6824E7B146006520B8 /* ModalElectric.swift */; };
+		55B6AA6B24E7B15E006520B8 /* ModalEnergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6A24E7B15E006520B8 /* ModalEnergy.swift */; };
+		55B6AA6D24E7B16D006520B8 /* ModalFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6C24E7B16D006520B8 /* ModalFrequency.swift */; };
+		55B6AA6F24E7B1A7006520B8 /* ModalFuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6E24E7B1A7006520B8 /* ModalFuel.swift */; };
+		55B6AA7124E7B1D5006520B8 /* ModalIlluminance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7024E7B1D5006520B8 /* ModalIlluminance.swift */; };
+		55B6AA7324E7B1EE006520B8 /* ModalLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7224E7B1EE006520B8 /* ModalLength.swift */; };
+		55B6AA7524E7B20B006520B8 /* ModalMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7424E7B20B006520B8 /* ModalMetric.swift */; };
+		55B6AA7724E7B21E006520B8 /* ModalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7624E7B21E006520B8 /* ModalNetwork.swift */; };
+		55B6AA7924E7B23C006520B8 /* ModalPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7824E7B23C006520B8 /* ModalPower.swift */; };
+		55B6AA7B24E7B252006520B8 /* ModalPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7A24E7B252006520B8 /* ModalPressure.swift */; };
+		55B6AA7D24E7B280006520B8 /* ModalRadiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7C24E7B280006520B8 /* ModalRadiation.swift */; };
+		55B6AA7F24E7B292006520B8 /* ModalRadioactivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA7E24E7B292006520B8 /* ModalRadioactivity.swift */; };
+		55B6AA8124E7B2AD006520B8 /* ModalSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8024E7B2AD006520B8 /* ModalSpeed.swift */; };
+		55B6AA8324E7B2C1006520B8 /* ModalTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8224E7B2C1006520B8 /* ModalTemperature.swift */; };
+		55B6AA8524E7B2DE006520B8 /* ModalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8424E7B2DE006520B8 /* ModalTime.swift */; };
+		55B6AA8724E7B2F5006520B8 /* ModalVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8624E7B2F5006520B8 /* ModalVolume.swift */; };
+		55B6AA8924E7B308006520B8 /* ModalWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8824E7B308006520B8 /* ModalWeight.swift */; };
+		55B6AA8B24E7B31F006520B8 /* ModalBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8A24E7B31F006520B8 /* ModalBase.swift */; };
+		55B6AA8F24E7B8CA006520B8 /* ModalPlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8E24E7B8C9006520B8 /* ModalPlain.swift */; };
+		55B6AA9124E9D566006520B8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA9024E9D566006520B8 /* SearchBarView.swift */; };
 		855FF5B38D25C720330720F1 /* Pods_Ultimate_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA09649EFC1E1499AEBF1E06 /* Pods_Ultimate_CalculatorTests.framework */; };
 		A12AB16FC77055F97B01BD29 /* Pods_Ultimate_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6550020AEDBD3DB6436B56 /* Pods_Ultimate_Calculator.framework */; };
 /* End PBXBuildFile section */
@@ -144,6 +170,32 @@
 		55B6AA5624E74A9F006520B8 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		55B6AA5824E74AB2006520B8 /* Base_Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_Conversions.swift; sourceTree = "<group>"; };
 		55B6AA5A24E75083006520B8 /* Plain_Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plain_Angle.swift; sourceTree = "<group>"; };
+		55B6AA5C24E7B08A006520B8 /* ModalAcceleration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAcceleration.swift; sourceTree = "<group>"; };
+		55B6AA5E24E7B09A006520B8 /* ModalArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalArea.swift; sourceTree = "<group>"; };
+		55B6AA6024E7B0B1006520B8 /* ModalCooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCooking.swift; sourceTree = "<group>"; };
+		55B6AA6224E7B0C2006520B8 /* ModalCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCurrency.swift; sourceTree = "<group>"; };
+		55B6AA6424E7B0D6006520B8 /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
+		55B6AA6624E7B10D006520B8 /* ModalDensity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDensity.swift; sourceTree = "<group>"; };
+		55B6AA6824E7B146006520B8 /* ModalElectric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalElectric.swift; sourceTree = "<group>"; };
+		55B6AA6A24E7B15E006520B8 /* ModalEnergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEnergy.swift; sourceTree = "<group>"; };
+		55B6AA6C24E7B16D006520B8 /* ModalFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFrequency.swift; sourceTree = "<group>"; };
+		55B6AA6E24E7B1A7006520B8 /* ModalFuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalFuel.swift; sourceTree = "<group>"; };
+		55B6AA7024E7B1D5006520B8 /* ModalIlluminance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalIlluminance.swift; sourceTree = "<group>"; };
+		55B6AA7224E7B1EE006520B8 /* ModalLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLength.swift; sourceTree = "<group>"; };
+		55B6AA7424E7B20B006520B8 /* ModalMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalMetric.swift; sourceTree = "<group>"; };
+		55B6AA7624E7B21E006520B8 /* ModalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNetwork.swift; sourceTree = "<group>"; };
+		55B6AA7824E7B23C006520B8 /* ModalPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPower.swift; sourceTree = "<group>"; };
+		55B6AA7A24E7B252006520B8 /* ModalPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPressure.swift; sourceTree = "<group>"; };
+		55B6AA7C24E7B280006520B8 /* ModalRadiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRadiation.swift; sourceTree = "<group>"; };
+		55B6AA7E24E7B292006520B8 /* ModalRadioactivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRadioactivity.swift; sourceTree = "<group>"; };
+		55B6AA8024E7B2AD006520B8 /* ModalSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSpeed.swift; sourceTree = "<group>"; };
+		55B6AA8224E7B2C1006520B8 /* ModalTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTemperature.swift; sourceTree = "<group>"; };
+		55B6AA8424E7B2DE006520B8 /* ModalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTime.swift; sourceTree = "<group>"; };
+		55B6AA8624E7B2F5006520B8 /* ModalVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalVolume.swift; sourceTree = "<group>"; };
+		55B6AA8824E7B308006520B8 /* ModalWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWeight.swift; sourceTree = "<group>"; };
+		55B6AA8A24E7B31F006520B8 /* ModalBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBase.swift; sourceTree = "<group>"; };
+		55B6AA8E24E7B8C9006520B8 /* ModalPlain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPlain.swift; sourceTree = "<group>"; };
+		55B6AA9024E9D566006520B8 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		582EE669E8B8F6968B81A64F /* Pods-Ultimate_Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate_Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Ultimate_Calculator/Pods-Ultimate_Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		61280F396F9F466B7DEB7B53 /* Pods-Ultimate_Calculator-Ultimate_CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate_Calculator-Ultimate_CalculatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Ultimate_Calculator-Ultimate_CalculatorUITests/Pods-Ultimate_Calculator-Ultimate_CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		63C38AC7C04F336C1BC21C79 /* Pods_Ultimate_Calculator_Ultimate_CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ultimate_Calculator_Ultimate_CalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +314,32 @@
 				55B6AA5624E74A9F006520B8 /* Weight.swift */,
 				55B6AA5824E74AB2006520B8 /* Base_Conversions.swift */,
 				55B6AA5A24E75083006520B8 /* Plain_Angle.swift */,
+				55B6AA5C24E7B08A006520B8 /* ModalAcceleration.swift */,
+				55B6AA5E24E7B09A006520B8 /* ModalArea.swift */,
+				55B6AA6024E7B0B1006520B8 /* ModalCooking.swift */,
+				55B6AA6224E7B0C2006520B8 /* ModalCurrency.swift */,
+				55B6AA6424E7B0D6006520B8 /* ModalData.swift */,
+				55B6AA6624E7B10D006520B8 /* ModalDensity.swift */,
+				55B6AA6824E7B146006520B8 /* ModalElectric.swift */,
+				55B6AA6A24E7B15E006520B8 /* ModalEnergy.swift */,
+				55B6AA6C24E7B16D006520B8 /* ModalFrequency.swift */,
+				55B6AA6E24E7B1A7006520B8 /* ModalFuel.swift */,
+				55B6AA7024E7B1D5006520B8 /* ModalIlluminance.swift */,
+				55B6AA7424E7B20B006520B8 /* ModalMetric.swift */,
+				55B6AA7624E7B21E006520B8 /* ModalNetwork.swift */,
+				55B6AA7824E7B23C006520B8 /* ModalPower.swift */,
+				55B6AA7A24E7B252006520B8 /* ModalPressure.swift */,
+				55B6AA7C24E7B280006520B8 /* ModalRadiation.swift */,
+				55B6AA7E24E7B292006520B8 /* ModalRadioactivity.swift */,
+				55B6AA8024E7B2AD006520B8 /* ModalSpeed.swift */,
+				55B6AA8224E7B2C1006520B8 /* ModalTemperature.swift */,
+				55B6AA8424E7B2DE006520B8 /* ModalTime.swift */,
+				55B6AA8624E7B2F5006520B8 /* ModalVolume.swift */,
+				55B6AA7224E7B1EE006520B8 /* ModalLength.swift */,
+				55B6AA8824E7B308006520B8 /* ModalWeight.swift */,
+				55B6AA8A24E7B31F006520B8 /* ModalBase.swift */,
+				55B6AA8E24E7B8C9006520B8 /* ModalPlain.swift */,
+				55B6AA9024E9D566006520B8 /* SearchBarView.swift */,
 				555C5BCD24D0B774009055B4 /* Preview Content */,
 			);
 			path = Ultimate_Calculator;
@@ -571,27 +649,40 @@
 				5560B72A24DB5CC900A55ED8 /* CalculatorButtonView.swift in Sources */,
 				55B6AA4924E749CB006520B8 /* Pressure.swift in Sources */,
 				5560B72224DB5AE400A55ED8 /* ContentViewCustomize.swift in Sources */,
+				55B6AA6924E7B146006520B8 /* ModalElectric.swift in Sources */,
 				5560B73424DB6ED800A55ED8 /* CalculatorButtonScientificSquare.swift in Sources */,
 				55B6AA3324E74882006520B8 /* Density.swift in Sources */,
 				55B6AA5B24E75083006520B8 /* Plain_Angle.swift in Sources */,
 				5560B72C24DB5D1200A55ED8 /* CalculatorButtonViewScientific.swift in Sources */,
 				55B6AA3924E748BC006520B8 /* Frequency.swift in Sources */,
+				55B6AA5D24E7B08A006520B8 /* ModalAcceleration.swift in Sources */,
 				55B6AA3D24E748DE006520B8 /* Illuminance.swift in Sources */,
+				55B6AA8F24E7B8CA006520B8 /* ModalPlain.swift in Sources */,
 				55B6AA5924E74AB2006520B8 /* Base_Conversions.swift in Sources */,
 				5560B72824DB5C6000A55ED8 /* ContentViewTheme.swift in Sources */,
 				55B6AA3724E748A8006520B8 /* Energy.swift in Sources */,
 				55A04D9824E5E3D40044C248 /* ConvertorButtonRounded.swift in Sources */,
+				55B6AA6B24E7B15E006520B8 /* ModalEnergy.swift in Sources */,
 				55B6AA5724E74A9F006520B8 /* Weight.swift in Sources */,
 				555C5BC824D0B771009055B4 /* SceneDelegate.swift in Sources */,
 				55B6AA2F24E74854006520B8 /* Currency.swift in Sources */,
+				55B6AA7B24E7B252006520B8 /* ModalPressure.swift in Sources */,
 				55A04DA924E6E9900044C248 /* ModalUnit2.swift in Sources */,
 				55A04D9C24E5E4190044C248 /* ConvertorButtonCircle.swift in Sources */,
+				55B6AA8924E7B308006520B8 /* ModalWeight.swift in Sources */,
 				55A04D9624E409720044C248 /* MainConvertorView.swift in Sources */,
+				55B6AA5F24E7B09A006520B8 /* ModalArea.swift in Sources */,
 				5560B73024DB627B00A55ED8 /* CalculatorButtonViewRounded.swift in Sources */,
 				555C5BCA24D0B771009055B4 /* ContentView.swift in Sources */,
 				55B6AA4724E749BC006520B8 /* Power.swift in Sources */,
+				55B6AA8324E7B2C1006520B8 /* ModalTemperature.swift in Sources */,
+				55B6AA7F24E7B292006520B8 /* ModalRadioactivity.swift in Sources */,
 				55B6AA2924E74805006520B8 /* Acceleration.swift in Sources */,
+				55B6AA6724E7B10D006520B8 /* ModalDensity.swift in Sources */,
+				55B6AA6F24E7B1A7006520B8 /* ModalFuel.swift in Sources */,
 				55A04DA724E6E97F0044C248 /* ModalUnit1.swift in Sources */,
+				55B6AA8724E7B2F5006520B8 /* ModalVolume.swift in Sources */,
+				55B6AA6D24E7B16D006520B8 /* ModalFrequency.swift in Sources */,
 				55B6AA2D24E74840006520B8 /* Cooking.swift in Sources */,
 				55B6AA5324E74A33006520B8 /* Time.swift in Sources */,
 				55B6AA4D24E749EE006520B8 /* Radioactivity.swift in Sources */,
@@ -603,15 +694,28 @@
 				55A04DA024E5FD570044C248 /* ConvertorOptionButtonView.swift in Sources */,
 				5560B72E24DB623E00A55ED8 /* CalculatorButtonViewSquare.swift in Sources */,
 				55B6AA4124E74938006520B8 /* Metric_Prefix.swift in Sources */,
+				55B6AA8524E7B2DE006520B8 /* ModalTime.swift in Sources */,
 				5560B73224DB6EBC00A55ED8 /* CalculatorButtonScientificRounded.swift in Sources */,
 				55B6AA3B24E748CB006520B8 /* Fuel_Consumption.swift in Sources */,
+				55B6AA6124E7B0B1006520B8 /* ModalCooking.swift in Sources */,
 				55A04DA224E632F10044C248 /* ConvertorCalculations.swift in Sources */,
+				55B6AA9124E9D566006520B8 /* SearchBarView.swift in Sources */,
+				55B6AA8124E7B2AD006520B8 /* ModalSpeed.swift in Sources */,
 				55B6AA2B24E74811006520B8 /* Area.swift in Sources */,
 				55B6AA5124E74A24006520B8 /* Temperature.swift in Sources */,
+				55B6AA7724E7B21E006520B8 /* ModalNetwork.swift in Sources */,
 				55B6AA4324E74983006520B8 /* Network_Speed.swift in Sources */,
+				55B6AA6524E7B0D6006520B8 /* ModalData.swift in Sources */,
+				55B6AA7124E7B1D5006520B8 /* ModalIlluminance.swift in Sources */,
+				55B6AA7324E7B1EE006520B8 /* ModalLength.swift in Sources */,
+				55B6AA7D24E7B280006520B8 /* ModalRadiation.swift in Sources */,
+				55B6AA7524E7B20B006520B8 /* ModalMetric.swift in Sources */,
+				55B6AA6324E7B0C2006520B8 /* ModalCurrency.swift in Sources */,
 				55B6AA4B24E749DA006520B8 /* Radiation_Dose.swift in Sources */,
 				55B6AA3124E74862006520B8 /* Data.swift in Sources */,
 				55B6AA4F24E74A14006520B8 /* Speed.swift in Sources */,
+				55B6AA7924E7B23C006520B8 /* ModalPower.swift in Sources */,
+				55B6AA8B24E7B31F006520B8 /* ModalBase.swift in Sources */,
 				55A04D9A24E5E3ED0044C248 /* ConvertorButtonSquare.swift in Sources */,
 				55B6AA3F24E748F3006520B8 /* Length.swift in Sources */,
 			);

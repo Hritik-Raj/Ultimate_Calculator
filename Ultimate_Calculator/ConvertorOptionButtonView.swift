@@ -15,8 +15,8 @@ struct ConvertorOptionButtonView: View {
     var body: some View {
         Button(action: {
             self.viewRouter.currentPage = self.button.title
-            self.env.displayconvert = "0"
-            self.env.completestringconvert = ""
+//            self.env.displayconvert = "0"
+//            self.env.completestringconvert = ""
 //            self.handleconvertoroption(convertorButton: self.button)
         }) {
             Text(button.title)

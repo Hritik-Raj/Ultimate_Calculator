@@ -9,10 +9,11 @@
 import SwiftUI
 
 struct Energy: View {
-    @State var ShowUnit1 = false
+        @State var ShowUnit1 = false
         @State var ShowUnit2 = false
         @EnvironmentObject var viewRouter: ViewRouter
         @EnvironmentObject var env: GlobalEnvironment
+       
         
         let buttons_normal: [[CalculatorButton]] = [
             [.ac, .plus_minus, .percent, .DEL],
@@ -34,10 +35,10 @@ struct Energy: View {
                                 Button(action: {
                                     self.ShowUnit1.toggle()
                                 }) {
-                                    Text("Unit 1" + "   " + env.displayconvert)
+                                    Text("Unit 1" + "   " + env.displayconvertener)
                                     }
                                     .sheet(isPresented: $ShowUnit1) {
-                                    ModalUnit1()
+                                    ModalEnergy(isPresented: self.$ShowUnit1)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
@@ -51,7 +52,7 @@ struct Energy: View {
                                     Text("Unit 2")
                                     }
                                     .sheet(isPresented: $ShowUnit2) {
-                                    ModalUnit2()
+                                    ModalEnergy(isPresented: self.$ShowUnit2)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
@@ -67,20 +68,19 @@ struct Energy: View {
     //                        .font(.system(size: CGFloat(env.fontsizeconvert)))
     //                }.padding()
                     
-                    
                     ForEach(buttons_normal, id: \.self) {
                         row in HStack (spacing: 12) {
                             if self.viewRouter.currentButtonDesign == "Rounded" {
                                 ForEach(row, id: \.self) { button in
-                                    ConvertorButtonRounded(button: button)
+                                    ConvertorButtonRounded(button: button, buttonconvertor: self.viewRouter.currentPage)
                                 }
                             } else if self.viewRouter.currentButtonDesign == "Square" {
                                 ForEach(row, id: \.self) { button in
-                                    ConvertorButtonSquare(button: button)
+                                    ConvertorButtonSquare(button: button, buttonconvertor: self.viewRouter.currentPage)
                                 }
                             } else {
                                 ForEach(row, id: \.self) { button in
-                                    ConvertorButtonCircle(button: button)
+                                    ConvertorButtonCircle(button: button, buttonconvertor: self.viewRouter.currentPage)
                                 }
                             }
 
@@ -125,6 +125,10 @@ struct Energy: View {
                 }
             }
         }
+    
+    private func save() -> String {
+        return env.displayconvert
+    }
 }
 
 struct Energy_Previews: PreviewProvider {

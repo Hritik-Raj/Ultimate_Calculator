@@ -10,11 +10,12 @@ import SwiftUI
 
 struct ConvertorButtonRounded: View {
      var button: CalculatorButton
+     var buttonconvertor: String
     @EnvironmentObject var env: GlobalEnvironment
     @EnvironmentObject var viewRouter: ViewRouter
     var body: some View {
         Button(action: {
-            self.env.handlekeypressconvert(self.button)
+            self.env.decidetype(self.button, self.buttonconvertor)
         }) {
             Text(button.title)
 

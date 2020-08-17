@@ -78,7 +78,7 @@ struct ContentViewConvertor : View {
                          .background(Color.gray)
                 }.padding(.all)
                 
-                ScrollView {
+                ScrollView (showsIndicators: false) {
                     VStack(spacing: 12) {
                         ForEach(buttons_convertor, id: \.self) {
                          button in HStack (spacing: 12) {

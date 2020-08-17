@@ -34,10 +34,10 @@ struct Time: View {
                                 Button(action: {
                                     self.ShowUnit1.toggle()
                                 }) {
-                                    Text("Unit 1" + "   " + env.displayconvert)
+                                    Text("Unit 1" + "   " + env.displayconverttime)
                                     }
                                     .sheet(isPresented: $ShowUnit1) {
-                                    ModalUnit1()
+                                    ModalTime(isPresented: self.$ShowUnit1)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
@@ -51,7 +51,7 @@ struct Time: View {
                                     Text("Unit 2")
                                     }
                                     .sheet(isPresented: $ShowUnit2) {
-                                    ModalUnit2()
+                                    ModalTime(isPresented: self.$ShowUnit2)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
@@ -72,15 +72,15 @@ struct Time: View {
                         row in HStack (spacing: 12) {
                             if self.viewRouter.currentButtonDesign == "Rounded" {
                                 ForEach(row, id: \.self) { button in
-                                    ConvertorButtonRounded(button: button)
+                                    ConvertorButtonRounded(button: button, buttonconvertor: self.viewRouter.currentPage)
                                 }
                             } else if self.viewRouter.currentButtonDesign == "Square" {
                                 ForEach(row, id: \.self) { button in
-                                    ConvertorButtonSquare(button: button)
+                                    ConvertorButtonSquare(button: button, buttonconvertor: self.viewRouter.currentPage)
                                 }
                             } else {
                                 ForEach(row, id: \.self) { button in
-                                    ConvertorButtonCircle(button: button)
+                                    ConvertorButtonCircle(button: button, buttonconvertor: self.viewRouter.currentPage)
                                 }
                             }
 
