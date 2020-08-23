@@ -10,6 +10,10 @@ import SwiftUI
 
 struct ModalElectric: View {
      @Binding var isPresented: Bool
+     @Binding var isPresented1: Bool
+     @Binding var isPresented2: Bool
+     @Binding var currentUnit1: String
+     @Binding var currentUnit2: String
         let electricarray =
             ["Ampere, A", "Biot, Bi", "Centiampere, cA", "Coulomb/Second, C/s", "Deciampere, dA", "Franklin/Second, fk/s", "Gigaampere, GA", "Gilberts, Gi", "Megaampere, MA", "Microampere, μA", "Milliampere, mA", "Nanoampere, nA", "Volt/Ohm, V/Ω"]
 
@@ -23,7 +27,17 @@ struct ModalElectric: View {
                     ForEach(self.electricarray.filter{
                         self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                     }, id: \.self) { electricarray in
-                        Button(action: {self.isPresented = false}) {
+                        Button(action: {
+                            if self.isPresented1 == true {
+                                self.isPresented1 = false
+                                self.currentUnit1 = electricarray
+                            }
+                            
+                            else if self.isPresented2 == true {
+                              self.isPresented2 = false
+                              self.currentUnit2 = electricarray
+                              }
+                        }) {
                             Text(electricarray)
                         }
                     }

@@ -10,6 +10,10 @@ import SwiftUI
 
 struct ModalLength: View {
         @Binding var isPresented: Bool
+        @Binding var isPresented1: Bool
+        @Binding var isPresented2: Bool
+        @Binding var currentUnit1: String
+        @Binding var currentUnit2: String
         let lengtharray =
         ["Angstrom, Å", "Astronomical Units, au", "Centimeter, cm", "Chains, ch", "Fathom, ftm", "Foot, ft", "Inch, in", "Kilometer, km", "Leagues, l", "Light Seconds, light-second", "Light days, light-day", "Light hours, light-hour", "Light minutes, light-minute", "Meter, m", "Microinches, μin", "Micron, μ", "Mile, mi", "Mile (nautical), nmi", "Millimeter, mm", "Nanometers, nm", "Nautical Leagues, nl", "Nautical Miles (UK), nmil UK", "Parsecs, pc", "Picometers, pm", "Rods, Rods", "Step, sl", "Thou, th" ]
 
@@ -23,7 +27,17 @@ struct ModalLength: View {
                     ForEach(self.lengtharray.filter{
                         self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                     }, id: \.self) { lengtharray in
-                        Button(action: {self.isPresented = false}) {
+                            Button(action: {
+                              if self.isPresented1 == true {
+                                  self.isPresented1 = false
+                                  self.currentUnit1 = lengtharray
+                              }
+                              
+                              else if self.isPresented2 == true {
+                                self.isPresented2 = false
+                                self.currentUnit2 = lengtharray
+                                }
+                          }) {
                             Text(lengtharray)
                         }
                     }

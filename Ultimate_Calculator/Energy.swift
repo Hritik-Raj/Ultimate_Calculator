@@ -9,57 +9,58 @@
 import SwiftUI
 
 struct Energy: View {
-        @State var ShowUnit1 = false
-        @State var ShowUnit2 = false
-        @EnvironmentObject var viewRouter: ViewRouter
-        @EnvironmentObject var env: GlobalEnvironment
-       
-        
-        let buttons_normal: [[CalculatorButton]] = [
-            [.ac, .plus_minus, .percent, .DEL],
-            [.seven, .eight, .nine, .divide],
-            [.four, .five, .six, .multiply],
-            [.one, .two, .three, .minus],
-            [.zero, .decimal, .equals, .plus]
-        ]
-        var body: some View {
-            ZStack (alignment: .bottom){ Color.black
-                .edgesIgnoringSafeArea(.all)
-                
-                VStack (spacing: 6){
+           @State var ShowUnit1 = false
+            @State var ShowUnit2 = false
+            @State var DisplayUnit1 = "Angle"
+            @State var DisplayUnit2 = "Angle"
+            @EnvironmentObject var viewRouter: ViewRouter
+            @EnvironmentObject var env: GlobalEnvironment
+            
+            let buttons_normal: [[CalculatorButton]] = [
+                [.ac, .plus_minus, .percent, .DEL],
+                [.seven, .eight, .nine, .divide],
+                [.four, .five, .six, .multiply],
+                [.one, .two, .three, .minus],
+                [.zero, .decimal, .equals, .plus]
+            ]
+            var body: some View {
+                ZStack (alignment: .bottom){ Color.black
+                    .edgesIgnoringSafeArea(.all)
                     
-    Text(viewRouter.currentPage)
-    .font(.system(size: 40))
-    .foregroundColor(.white)
-    .padding(.all)
-                                Button(action: {
-                                    self.ShowUnit1.toggle()
-                                }) {
-                                    Text("Unit 1" + "   " + env.displayconvertener)
-                                    }
-                                    .sheet(isPresented: $ShowUnit1) {
-                                    ModalEnergy(isPresented: self.$ShowUnit1)
-                                }
-                                    .font(.system(size: 40))
-                                    .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
-                                    .foregroundColor(.white)
-                                    .background(Color.gray)
-                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
+                    VStack (spacing: 6){
                         
-                                Button(action: {
-                                    self.ShowUnit2.toggle()
-                                }) {
-                                    Text("Unit 2")
+        Text(viewRouter.currentPage)
+        .font(.system(size: 40))
+        .foregroundColor(.white)
+        .padding(.all)
+                                    Button(action: {
+                                        self.ShowUnit1.toggle()
+                                    }) {
+                                        Text(self.DisplayUnit1 + "  "  + env.displayconvertener)
+                                        }
+                                    .sheet(isPresented: $ShowUnit1) {
+                                        ModalEnergy(isPresented: self.$ShowUnit1, isPresented1: self.$ShowUnit1, isPresented2: self.$ShowUnit2, currentUnit1: self.$DisplayUnit1, currentUnit2: self.$DisplayUnit2)
                                     }
-                                    .sheet(isPresented: $ShowUnit2) {
-                                    ModalEnergy(isPresented: self.$ShowUnit2)
-                                }
-                                    .font(.system(size: 40))
-                                    .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
-                                    .foregroundColor(.white)
-                                    .background(Color.gray)
-                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
-                    Spacer()
+                                        .font(.system(size: 40))
+                                        .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
+                                        .foregroundColor(.white)
+                                        .background(Color.gray)
+                                        .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
+                            
+                                    Button(action: {
+                                        self.ShowUnit2.toggle()
+                                    }) {
+                                        Text(self.DisplayUnit2)
+                                        }
+                                        .sheet(isPresented: $ShowUnit2) {
+                                            ModalEnergy(isPresented: self.$ShowUnit1, isPresented1: self.$ShowUnit1, isPresented2: self.$ShowUnit2, currentUnit1: self.$DisplayUnit1, currentUnit2: self.$DisplayUnit2)
+                                    }
+                                        .font(.system(size: 40))
+                                        .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
+                                        .foregroundColor(.white)
+                                        .background(Color.gray)
+                                        .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
+                        Spacer()
                     
     //                HStack {
     //                    Spacer()

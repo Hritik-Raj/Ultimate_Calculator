@@ -10,8 +10,12 @@ import SwiftUI
 
 struct ModalCooking: View {
         @Binding var isPresented: Bool
+        @Binding var isPresented1: Bool
+        @Binding var isPresented2: Bool
+        @Binding var currentUnit1: String
+        @Binding var currentUnit2: String
         let cookingarray =
-            ["Bushels, bu", "Centiliters, cl", "Cups, cup", "Cups (Canada), Can cup", "Cups (UK), UK cup", "Cups (US), US cup", "Deciliters, d;", "Drops, Drop", "Fifths, fifth", "Fluid Ounces (UK), UK fl oz", "Fluid Ounces (US), US fl oz", "Gallons (UK), UK gal", "Gallons (US), US gal", "Gills, gill", "Jiggers, jigger", "Liters, l", "Milliliters, ml", "Pecks, peck", "Pints, pt", "Pints (US Dry), dry US pt", "Pints (US Liquid), liquid US pt", "Quarts, qt", "Tablespoons, tbsp", "Tablespoons (UK), UK tbsp", "Tablespoons (US), US tbsp", "Teaspoons, tspn", "Teaspoons (UK), UK tspn", "Teaspoons (UK), UK tspn", "Teaspoons (US), US tspn"]
+            ["Bushels, bu", "Centiliters, cl", "Cups, cup", "Cups (Canada), Can cup", "Cups (UK), UK cup", "Cups (US), US cup", "Deciliters, dl", "Drops, Drop", "Fifths, fifth", "Fluid Ounces (UK), UK fl oz", "Fluid Ounces (US), US fl oz", "Gallons (UK), UK gal", "Gallons (US), US gal", "Gills, gill", "Jiggers, jigger", "Liters, l", "Milliliters, ml", "Pecks, peck", "Pints, pt", "Pints (US Dry), dry US pt", "Pints (US Liquid), liquid US pt", "Quarts, qt", "Tablespoons, tbsp", "Tablespoons (UK), UK tbsp", "Tablespoons (US), US tbsp", "Teaspoons, tspn", "Teaspoons (UK), UK tspn", "Teaspoons (UK), UK tspn", "Teaspoons (US), US tspn"]
 
         @State private var searchTerm : String = ""
 
@@ -23,7 +27,17 @@ struct ModalCooking: View {
                     ForEach(self.cookingarray.filter{
                         self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                     }, id: \.self) { cookingarray in
-                        Button(action: {self.isPresented = false}) {
+                        Button(action: {
+                            if self.isPresented1 == true {
+                                self.isPresented1 = false
+                                self.currentUnit1 = cookingarray
+                            }
+                            
+                            else if self.isPresented2 == true {
+                              self.isPresented2 = false
+                              self.currentUnit2 = cookingarray
+                              }
+                        }) {
                             Text(cookingarray)
                         }
                     }

@@ -10,6 +10,10 @@ import SwiftUI
 
 struct ModalRadiation: View {
        @Binding var isPresented: Bool
+       @Binding var isPresented1: Bool
+       @Binding var isPresented2: Bool
+       @Binding var currentUnit1: String
+       @Binding var currentUnit2: String
         let radiationarray =
         ["Bit, Bit", "Centigray, cGy", "Gray, Gy", "Microgray, μGy", "Microsievert, μSv", "Milligray, mGy", "Millirem, mrem", "Millisievert, mSv", "Rad, rad", "Sievert, Sv"]
 
@@ -23,7 +27,17 @@ struct ModalRadiation: View {
                     ForEach(self.radiationarray.filter{
                         self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                     }, id: \.self) { radiationarray in
-                        Button(action: {self.isPresented = false}) {
+                        Button(action: {
+                            if self.isPresented1 == true {
+                                self.isPresented1 = false
+                                self.currentUnit1 = radiationarray
+                            }
+                            
+                            else if self.isPresented2 == true {
+                              self.isPresented2 = false
+                              self.currentUnit2 = radiationarray
+                              }
+                        }) {
                             Text(radiationarray)
                         }
                     }

@@ -10,8 +10,63 @@ import Foundation
 import SwiftUI
 
 struct Acceleration: View {
-    @State var ShowUnit1 = false
+//    @State var ShowUnit1 = false
+//        @State var ShowUnit2 = false
+//        @EnvironmentObject var viewRouter: ViewRouter
+//        @EnvironmentObject var env: GlobalEnvironment
+//
+//        let buttons_normal: [[CalculatorButton]] = [
+//            [.ac, .plus_minus, .percent, .DEL],
+//            [.seven, .eight, .nine, .divide],
+//            [.four, .five, .six, .multiply],
+//            [.one, .two, .three, .minus],
+//            [.zero, .decimal, .equals, .plus]
+//        ]
+//        var body: some View {
+//            ZStack (alignment: .bottom){ Color.black
+//                .edgesIgnoringSafeArea(.all)
+//
+//                VStack (spacing: 6){
+//
+//                    Text(viewRouter.currentPage)
+//                    .font(.system(size: 40))
+//                    .foregroundColor(.white)
+//                    .padding(.all)
+//                                Button(action: {
+//                                    self.ShowUnit1.toggle()
+//                                }) {
+//                                    Text("Unit 1" + "   " + env.displayconvertacc)
+//                                    }
+//                                    .sheet(isPresented: $ShowUnit1) {
+//                                    ModalAcceleration(isPresented: self.$ShowUnit1)
+//                                }
+//                                    .font(.system(size: 40))
+//                                    .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
+//                                    .foregroundColor(.white)
+//                                    .background(Color.gray)
+//                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
+//
+//                                Button(action: {
+//                                    self.ShowUnit2.toggle()
+//                                }) {
+//                                    Text("Unit 2")
+//                                    }
+//                                    .sheet(isPresented: $ShowUnit2) {
+//                                    ModalAcceleration(isPresented: self.$ShowUnit2)
+//                                }
+//                                    .font(.system(size: 40))
+//                                    .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
+//                                    .foregroundColor(.white)
+//                                    .background(Color.gray)
+//                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
+//                    Spacer()
+    
+    
+    
+        @State var ShowUnit1 = false
         @State var ShowUnit2 = false
+        @State var DisplayUnit1 = "Angle"
+        @State var DisplayUnit2 = "Angle"
         @EnvironmentObject var viewRouter: ViewRouter
         @EnvironmentObject var env: GlobalEnvironment
         
@@ -28,37 +83,37 @@ struct Acceleration: View {
                 
                 VStack (spacing: 6){
                     
-                    Text(viewRouter.currentPage)
-                    .font(.system(size: 40))
-                    .foregroundColor(.white)
-                    .padding(.all)
+    Text(viewRouter.currentPage)
+    .font(.system(size: 40))
+    .foregroundColor(.white)
+    .padding(.all)
                                 Button(action: {
                                     self.ShowUnit1.toggle()
                                 }) {
-                                    Text("Unit 1" + "   " + env.displayconvertacc)
+                                    Text(self.DisplayUnit1 + "  "  + env.displayconvertacc)
                                     }
-                                    .sheet(isPresented: $ShowUnit1) {
-                                    ModalAcceleration(isPresented: self.$ShowUnit1)
+                                .sheet(isPresented: $ShowUnit1) {
+                                    ModalAcceleration(isPresented: self.$ShowUnit1, isPresented1: self.$ShowUnit1, isPresented2: self.$ShowUnit2, currentUnit1: self.$DisplayUnit1, currentUnit2: self.$DisplayUnit2)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
                                     .foregroundColor(.white)
                                     .background(Color.gray)
-                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
+//                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
                         
                                 Button(action: {
                                     self.ShowUnit2.toggle()
                                 }) {
-                                    Text("Unit 2")
+                                    Text(self.DisplayUnit2)
                                     }
                                     .sheet(isPresented: $ShowUnit2) {
-                                    ModalAcceleration(isPresented: self.$ShowUnit2)
+                                        ModalAcceleration(isPresented: self.$ShowUnit1, isPresented1: self.$ShowUnit1, isPresented2: self.$ShowUnit2, currentUnit1: self.$DisplayUnit1, currentUnit2: self.$DisplayUnit2)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
                                     .foregroundColor(.white)
                                     .background(Color.gray)
-                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
+//                                    .cornerRadius(UIScreen.main.bounds.width - 2 * 12)
                     Spacer()
                     
     //                HStack {

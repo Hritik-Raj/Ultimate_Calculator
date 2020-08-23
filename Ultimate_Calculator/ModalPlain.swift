@@ -10,8 +10,10 @@ import SwiftUI
 
 struct ModalPlain: View {
      @Binding var isPresented: Bool
-//     @Binding var currentUnit1: String
-//    @Binding var currentUnit2: String
+     @Binding var isPresented1: Bool
+     @Binding var isPresented2: Bool
+     @Binding var currentUnit1: String
+     @Binding var currentUnit2: String
         let plainarray =
         ["1/2 circle, 180°", "1/4 circle, 90°", "1/6 circle, 60°", "1/8 circle, 45°", "1/10 circle, 36°", "1/16 circle, 22.5°", "Angular Mil (NATO), mil", "Degree of Arc, deg", "Gradian, grad", "Minute of Arc, arcmin", "Radian, rad", "Revolution, r", "Second of Arc, arcsec"]
 
@@ -26,8 +28,15 @@ struct ModalPlain: View {
                         self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                     }, id: \.self) { plainarray in
                         Button(action: {
-                            self.isPresented = false
-//                            self.currentUnit1 = plainarray
+                            if self.isPresented1 == true {
+                                self.isPresented1 = false
+                                self.currentUnit1 = plainarray
+                            }
+                            
+                            else if self.isPresented2 == true {
+                              self.isPresented2 = false
+                              self.currentUnit2 = plainarray
+                              }
                         }) {
                             Text(plainarray)
                         }

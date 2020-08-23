@@ -10,6 +10,10 @@ import SwiftUI
 
 struct ModalWeight: View {
       @Binding var isPresented: Bool
+      @Binding var isPresented1: Bool
+      @Binding var isPresented2: Bool
+      @Binding var currentUnit1: String
+      @Binding var currentUnit2: String
         let weightarray =
             ["Carat, kt", "Carat (UK), UK kt", "Centigrams, cg", "Dalton, Da", "Grains, gr", "Gram, g", "Kilogram, kg", "Long Ton (UK), t", "Metric Ton, t", "Micrograms, μg", "Milligrams, mg", "Nanograms, ng", "Ounce (US), oz", "Pound (US), lb", "Short Ton (US), t", "Stone, st", "Troy Ounces, oz t"]
 
@@ -23,7 +27,17 @@ struct ModalWeight: View {
                     ForEach(self.weightarray.filter{
                         self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                     }, id: \.self) { weightarray in
-                        Button(action: {self.isPresented = false}) {
+                            Button(action: {
+                              if self.isPresented1 == true {
+                                  self.isPresented1 = false
+                                  self.currentUnit1 = weightarray
+                              }
+                              
+                              else if self.isPresented2 == true {
+                                self.isPresented2 = false
+                                self.currentUnit2 = weightarray
+                                }
+                          }) {
                             Text(weightarray)
                         }
                     }

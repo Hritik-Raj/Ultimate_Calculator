@@ -10,6 +10,10 @@ import SwiftUI
 
 struct ModalNetwork: View {
         @Binding var isPresented: Bool
+        @Binding var isPresented1: Bool
+        @Binding var isPresented2: Bool
+        @Binding var currentUnit1: String
+        @Binding var currentUnit2: String
         let networkarray =
         ["Bit/Second, bps", "Byte/Second, Bps", "Gigabit/Second, Gbps",
          "Gigabyte/Second, GBps", "Kilobit/Second, KBps", "Megabit/Second, Mbps",
@@ -25,7 +29,17 @@ struct ModalNetwork: View {
                     ForEach(self.networkarray.filter{
                         self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
                     }, id: \.self) { networkarray in
-                        Button(action: {self.isPresented = false}) {
+                        Button(action: {
+                            if self.isPresented1 == true {
+                                self.isPresented1 = false
+                                self.currentUnit1 = networkarray
+                            }
+                            
+                            else if self.isPresented2 == true {
+                              self.isPresented2 = false
+                              self.currentUnit2 = networkarray
+                              }
+                        }) {
                             Text(networkarray)
                         }
                     }

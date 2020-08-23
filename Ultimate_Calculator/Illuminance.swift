@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct Illuminance: View {
-    @State var ShowUnit1 = false
+        @State var ShowUnit1 = false
         @State var ShowUnit2 = false
+        @State var DisplayUnit1 = "Angle"
+        @State var DisplayUnit2 = "Angle"
         @EnvironmentObject var viewRouter: ViewRouter
         @EnvironmentObject var env: GlobalEnvironment
         
@@ -26,17 +28,18 @@ struct Illuminance: View {
                 .edgesIgnoringSafeArea(.all)
                 
                 VStack (spacing: 6){
-                    Text(viewRouter.currentPage)
-                    .font(.system(size: 40))
-                    .foregroundColor(.white)
-                    .padding(.all)
+                    
+    Text(viewRouter.currentPage)
+    .font(.system(size: 40))
+    .foregroundColor(.white)
+    .padding(.all)
                                 Button(action: {
                                     self.ShowUnit1.toggle()
                                 }) {
-                                    Text("Unit 1" + "   " + env.displayconvertillu)
+                                    Text(self.DisplayUnit1 + "  "  + env.displayconvertillu)
                                     }
-                                    .sheet(isPresented: $ShowUnit1) {
-                                    ModalIlluminance(isPresented: self.$ShowUnit1)
+                                .sheet(isPresented: $ShowUnit1) {
+                                    ModalIlluminance(isPresented: self.$ShowUnit1, isPresented1: self.$ShowUnit1, isPresented2: self.$ShowUnit2, currentUnit1: self.$DisplayUnit1, currentUnit2: self.$DisplayUnit2)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
@@ -47,10 +50,10 @@ struct Illuminance: View {
                                 Button(action: {
                                     self.ShowUnit2.toggle()
                                 }) {
-                                    Text("Unit 2")
+                                    Text(self.DisplayUnit2)
                                     }
                                     .sheet(isPresented: $ShowUnit2) {
-                                    ModalIlluminance(isPresented: self.$ShowUnit2)
+                                        ModalIlluminance(isPresented: self.$ShowUnit1, isPresented1: self.$ShowUnit1, isPresented2: self.$ShowUnit2, currentUnit1: self.$DisplayUnit1, currentUnit2: self.$DisplayUnit2)
                                 }
                                     .font(.system(size: 40))
                                     .frame(width: (UIScreen.main.bounds.width - 2 * 12), height: UIScreen.main.bounds.height / 10)
