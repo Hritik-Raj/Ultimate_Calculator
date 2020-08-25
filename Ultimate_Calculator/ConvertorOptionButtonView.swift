@@ -29,7 +29,7 @@ struct ConvertorOptionButtonView: View {
         }
     }
 //    private func handleconvertoroption( convertorButton: ConvertorButton) {
-//        print ("poppu")
+//          ("poppu")
 //        if convertorButton.title == "Acceleration" {
 //            self.viewRouter.currentPage = "Acceleration"
 //        } else if convertorButton.title == "Area" {

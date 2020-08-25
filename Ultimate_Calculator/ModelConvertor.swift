@@ -29,7 +29,7 @@ struct ModelConvertor {
                 case let .base(base):
                     return ["base": base]
                 case .default:
-                    return ["base": "ILS"]
+                    return ["base": "USD"]
             }
         }
     }

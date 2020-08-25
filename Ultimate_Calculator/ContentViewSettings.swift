@@ -44,6 +44,14 @@ struct ContentViewSettings : View {
                 
                 HStack (alignment: .bottom) {
                             Text("Settings").font(.system(size: 14))
+                        
+                            Button(action: {self.viewRouter.currentPage = "Currency Convert"}) {
+                            Text("Currency Convert")
+                            }.font(.system(size: 18))
+                            .frame(width: (UIScreen.main.bounds.width - 5 * 12)/4, height: ((UIScreen.main.bounds.width - 5 * 12)/4)*0.5)
+                            .foregroundColor(.white)
+                            .background(Color.gray)
+                            .cornerRadius((UIScreen.main.bounds.width - 5 * 12)/4)
 
                             Button(action: {self.viewRouter.currentPage = "page_settings"}) {
                             Text("Settings")

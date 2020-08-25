@@ -122,7 +122,7 @@ public final class Expression: CustomStringConvertible {
             }
         }
 
-        /// Printable version of the symbol name
+        ///  able version of the symbol name
         var escapedName: String {
             return UnicodeScalarView(name).escapedIdentifier()
         }
@@ -457,7 +457,7 @@ public final class Expression: CustomStringConvertible {
         }
     }
 
-    /// Returns the optmized, pretty-printed expression if it was valid
+    /// Returns the optmized, pretty- ed expression if it was valid
     /// Otherwise, returns the original (invalid) expression string
     public var description: String { return root.description }
 
@@ -720,7 +720,7 @@ private extension Expression {
 public struct ParsedExpression: CustomStringConvertible {
     fileprivate let root: Subexpression
 
-    /// Returns the pretty-printed expression if it was valid
+    /// Returns the pretty- ed expression if it was valid
     /// Otherwise, returns the original (invalid) expression string
     public var description: String { return root.description }
 

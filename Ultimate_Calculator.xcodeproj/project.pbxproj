@@ -96,6 +96,8 @@
 		55C9B40E24ECEE7F002E6B87 /* Main+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9B40D24ECEE7F002E6B87 /* Main+Service.swift */; };
 		55C9B41024EF1896002E6B87 /* ConvertorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9B40F24EF1896002E6B87 /* ConvertorViewModel.swift */; };
 		55C9B41224EF220E002E6B87 /* CurrencyAPIModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9B41124EF220E002E6B87 /* CurrencyAPIModal.swift */; };
+		55C9B41424F26D26002E6B87 /* MainCurrencyConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9B41324F26D26002E6B87 /* MainCurrencyConvertView.swift */; };
+		55C9B41624F4B417002E6B87 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9B41524F4B417002E6B87 /* ProductCard.swift */; };
 		855FF5B38D25C720330720F1 /* Pods_Ultimate_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA09649EFC1E1499AEBF1E06 /* Pods_Ultimate_CalculatorTests.framework */; };
 		A12AB16FC77055F97B01BD29 /* Pods_Ultimate_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6550020AEDBD3DB6436B56 /* Pods_Ultimate_Calculator.framework */; };
 /* End PBXBuildFile section */
@@ -208,6 +210,8 @@
 		55C9B40D24ECEE7F002E6B87 /* Main+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+Service.swift"; sourceTree = "<group>"; };
 		55C9B40F24EF1896002E6B87 /* ConvertorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertorViewModel.swift; sourceTree = "<group>"; };
 		55C9B41124EF220E002E6B87 /* CurrencyAPIModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAPIModal.swift; sourceTree = "<group>"; };
+		55C9B41324F26D26002E6B87 /* MainCurrencyConvertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCurrencyConvertView.swift; sourceTree = "<group>"; };
+		55C9B41524F4B417002E6B87 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		582EE669E8B8F6968B81A64F /* Pods-Ultimate_Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate_Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Ultimate_Calculator/Pods-Ultimate_Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		61280F396F9F466B7DEB7B53 /* Pods-Ultimate_Calculator-Ultimate_CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate_Calculator-Ultimate_CalculatorUITests.release.xcconfig"; path = "Target Support Files/Pods-Ultimate_Calculator-Ultimate_CalculatorUITests/Pods-Ultimate_Calculator-Ultimate_CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		63C38AC7C04F336C1BC21C79 /* Pods_Ultimate_Calculator_Ultimate_CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ultimate_Calculator_Ultimate_CalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +363,8 @@
 				55C9B40D24ECEE7F002E6B87 /* Main+Service.swift */,
 				55C9B40F24EF1896002E6B87 /* ConvertorViewModel.swift */,
 				55C9B41124EF220E002E6B87 /* CurrencyAPIModal.swift */,
+				55C9B41324F26D26002E6B87 /* MainCurrencyConvertView.swift */,
+				55C9B41524F4B417002E6B87 /* ProductCard.swift */,
 			);
 			path = Ultimate_Calculator;
 			sourceTree = "<group>";
@@ -695,10 +701,12 @@
 				55A04D9624E409720044C248 /* MainConvertorView.swift in Sources */,
 				55B6AA5F24E7B09A006520B8 /* ModalArea.swift in Sources */,
 				5560B73024DB627B00A55ED8 /* CalculatorButtonViewRounded.swift in Sources */,
+				55C9B41624F4B417002E6B87 /* ProductCard.swift in Sources */,
 				555C5BCA24D0B771009055B4 /* ContentView.swift in Sources */,
 				55B6AA4724E749BC006520B8 /* Power.swift in Sources */,
 				55B6AA8324E7B2C1006520B8 /* ModalTemperature.swift in Sources */,
 				55B6AA7F24E7B292006520B8 /* ModalRadioactivity.swift in Sources */,
+				55C9B41424F26D26002E6B87 /* MainCurrencyConvertView.swift in Sources */,
 				55B6AA2924E74805006520B8 /* Acceleration.swift in Sources */,
 				55B6AA6724E7B10D006520B8 /* ModalDensity.swift in Sources */,
 				55B6AA6F24E7B1A7006520B8 /* ModalFuel.swift in Sources */,

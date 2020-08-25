@@ -14,37 +14,79 @@ struct CurrencyAPIModal: View {
     @Binding var isPresented2: Bool
     @Binding var currentUnit1: String
     @Binding var currentUnit2: String
-     let radiationarray =
-     ["Bit, Bit", "Centigray, cGy", "Gray, Gy", "Microgray, μGy", "Microsievert, μSv", "Milligray, mGy", "Millirem, mrem", "Millisievert, mSv", "Rad, rad", "Sievert, Sv"]
+//    @Binding var currentcurrencyval1: Double
+    @ObservedObject var vm = ConvertorViewModel()
+    
 
      @State private var searchTerm : String = ""
 
      var body: some View {
-         NavigationView{
-             List {
-                 SearchBarView(text: $searchTerm)
+        NavigationView {
+            List {
+                SearchBarView(text: $searchTerm)
+                ForEach(vm.validatedOutput().filter {self.searchTerm.isEmpty ? true :
+                    $0.localizedStandardContains(self.searchTerm)
+                }, id: \.self) { key in
+                    HStack {
+                        Text(self.vm.emojiFlag(key))
+                            .font(.system(size: 70))
+                        Spacer()
+                        Text(self.vm.parsedOutput(for: key))
+                            .font(.system(size: 28))
+                            .bold()
+                            .shadow(color: .secondary, radius: 3)
+                    }
+                    .padding(7)
+                    .background(Color.gray.opacity(0.25))
+                    .cornerRadius(10)
+                    .onTapGesture {
+                        withAnimation {
+                            
+                            if self.isPresented1 == true {
+                                self.isPresented1 = false
+                                self.currentUnit1 = key
+                                
+                            }
 
-                 ForEach(self.radiationarray.filter{
-                     self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
-                 }, id: \.self) { radiationarray in
-                     Button(action: {
-                         if self.isPresented1 == true {
-                             self.isPresented1 = false
-                             self.currentUnit1 = radiationarray
-                         }
-                         
-                         else if self.isPresented2 == true {
-                           self.isPresented2 = false
-                           self.currentUnit2 = radiationarray
-                           }
-                     }) {
-                         Text(radiationarray)
-                     }
-                 }
-             }
+                            else if self.isPresented2 == true {
+                              self.isPresented2 = false
+                                self.currentUnit2 = key
+                              }
+                            
+                            self.vm.countryCode = key
+                            self.vm.fetchRates()
+                            
+                        }
+                    }
+                }
+            }
+        }
 
-             .navigationBarTitle(Text("Radiation Dose"))
-         }
+//         NavigationView{
+//             List {
+//                 SearchBarView(text: $searchTerm)
+//
+//                 ForEach(self.radiationarray.filter{
+//                     self.searchTerm.isEmpty ? true : $0.localizedStandardContains(self.searchTerm)
+//                 }, id: \.self) { radiationarray in
+//                     Button(action: {
+//                         if self.isPresented1 == true {
+//                             self.isPresented1 = false
+//                             self.currentUnit1 = radiationarray
+//                         }
+//
+//                         else if self.isPresented2 == true {
+//                           self.isPresented2 = false
+//                           self.currentUnit2 = radiationarray
+//                           }
+//                     }) {
+//                         Text(radiationarray)
+//                     }
+//                 }
+//             }
+//
+//             .navigationBarTitle(Text("Radiation Dose"))
+//         }
      }
 }
 

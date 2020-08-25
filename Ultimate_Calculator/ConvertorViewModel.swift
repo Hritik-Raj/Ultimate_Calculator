@@ -72,8 +72,21 @@ extension ConvertorViewModel {
             formatter.string(from: NSNumber(value: rate[key] ?? 1.0))!
     }
     
+    func parsedOutputvalue(for key: String) -> String {
+        guard let mainRates = main?.rates else { return "" }
+        let rate = mainRates.filter { $0.key == key }
+//        var formatter: NumberFormatter {
+//            let fm = NumberFormatter()
+             // fm.numberStyle = .currency
+             // fm.locale = Locale(identifier: key.dropLast() + "_" + key.dropLast().uppercased())
+//             return fm
+//        }
+        return String(rate[key] ?? 1.0)
+//            formatter.string(from: NSNumber(value: rate[key] ?? 1.0))!
+    }
+    
     func validatedOutput() -> [Dictionary<String, Double>.Keys.Element] {
-        guard let tmp = main?.rates?.filter({ $0.key != countryCode ?? "ILS" }).keys.sorted() else { return []}
+        guard let tmp = main?.rates?.filter({ $0.key != countryCode ?? "USD" }).keys.sorted() else { return []}
         return tmp
     }
 }

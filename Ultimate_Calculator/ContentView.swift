@@ -134,8 +134,8 @@ class GlobalEnvironment: ObservableObject {
     @Published var fontsizeare = 80
     @Published var displayconvertcook = "0"
     @Published var fontsizecook = 80
-    @Published var displayconvertcurr = "0"
-    @Published var fontsizecurr = 80
+//    @Published var displayconvertcurr = "0"
+//    @Published var fontsizecurr = 80
     @Published var displayconvertdat = "0"
     @Published var fontsizedat = 80
     @Published var displayconvertdens = "0"
@@ -177,7 +177,9 @@ class GlobalEnvironment: ObservableObject {
     @Published var displayconvertweight = "0"
     @Published var fontsizeweight = 80
     @Published var displayconvertbase = "0"
-    @Published var fontsizeba = 80
+    @Published var fontsizebase = 80
+    @Published var displayconvertcurrency = "0"
+    @Published var fontsizecurrency = 80
     
     
     var numberFormatter:NumberFormatter = NumberFormatter()
@@ -196,8 +198,8 @@ class GlobalEnvironment: ObservableObject {
     var minus_plus_convertare:Bool = false
     var completestringconvertcook: String = ""
     var minus_plus_convertcook:Bool = false
-    var completestringconvertcurr: String = ""
-    var minus_plus_convertcurr:Bool = false
+//    var completestringconvertcurr: String = ""
+//    var minus_plus_convertcurr:Bool = false
     var completestringconvertdat: String = ""
     var minus_plus_convertdat:Bool = false
     var completestringconvertdens: String = ""
@@ -240,6 +242,8 @@ class GlobalEnvironment: ObservableObject {
     var minus_plus_convertweight:Bool = false
     var completestringconvertbase: String = ""
     var minus_plus_convertbase:Bool = false
+    var completestringconvertcurrency: String = ""
+    var minus_plus_convertcurrency:Bool = false
 
     
     init() {
@@ -286,8 +290,8 @@ class GlobalEnvironment: ObservableObject {
         else if convertorButton == "Cooking" {
             handlekeypresscook(calculatorButton)
         }
-        else if convertorButton == "Currency" {
-            handlekeypresscurr(calculatorButton)
+        else if convertorButton == "Currency Convert" {
+            handlekeypresscurrency(calculatorButton)
         }
         else if convertorButton == "Data" {
             handlekeypressdat(calculatorButton)
@@ -354,7 +358,7 @@ class GlobalEnvironment: ObservableObject {
         }
     }
     func handlekeypress(_ calculatorButton: CalculatorButton) {
-        print("Reached")
+//        print("Reached")
         if calculatorButton.title == "AC" {
             self.reset()
         } else if calculatorButton.title == "DEL"{
@@ -384,11 +388,10 @@ class GlobalEnvironment: ObservableObject {
         }
             else if calculatorButton.title == "=" {
             let expression = Expression(self.completestring)
-            print ("Hello ", completestring)
+//            print ("Hello ", completestring)
             do {
                 let result = try expression.evaluate()
                 self.display = formatNumber(value: String(result))
-                print ("hi", self.display)
                 
             }
             catch {
@@ -418,7 +421,7 @@ class GlobalEnvironment: ObservableObject {
     
     
     func handlekeypressconvert(_ calculatorButton: CalculatorButton) {
-        print("Reached convert")
+
         if calculatorButton.title == "AC" {
             self.resetconvert()
         } else if calculatorButton.title == "DEL"{
@@ -448,11 +451,11 @@ class GlobalEnvironment: ObservableObject {
         }
             else if calculatorButton.title == "=" {
             let expressionconvert = Expression(self.completestringconvert)
-            print ("Hello ", completestringconvert)
+      
             do {
                 let resultconvert = try expressionconvert.evaluate()
                 self.displayconvert = formatNumber(value: String(resultconvert))
-                print ("hi", self.displayconvert)
+   
                 
             }
             catch {
@@ -471,7 +474,7 @@ class GlobalEnvironment: ObservableObject {
     
     func handlenumberselection(label: String) {
         if self.display.count == 0 || self.display.count < 9 {
-                print ("reached 2")
+       
                 self.display = display == "0" ? label : display + label
             self.display = self.formatNumber(value: self.display)
              self.getFontSize()
@@ -481,7 +484,7 @@ class GlobalEnvironment: ObservableObject {
     
     func handlenumberselectionconvert(label: String) {
         if self.displayconvert.count == 0 || self.displayconvert.count < 9 {
-                print ("reached 22")
+      
                 self.displayconvert = displayconvert == "0" ? label : displayconvert + label
             self.displayconvert = self.formatNumber(value: self.displayconvert)
              self.getFontSizeConvert()
@@ -518,7 +521,7 @@ class GlobalEnvironment: ObservableObject {
     }
     
     func handlekeypressacc(_ calculatorButton: CalculatorButton) {
-        print("Reached convert")
+
         if calculatorButton.title == "AC" {
             self.resetconvertacc()
         } else if calculatorButton.title == "DEL"{
@@ -569,7 +572,7 @@ class GlobalEnvironment: ObservableObject {
     
     func handlenumberselectionconvertacc(label: String) {
         if self.displayconvertacc.count == 0 || self.displayconvertacc.count < 9 {
-                print ("reached 22")
+       
                 self.displayconvertacc = displayconvertacc == "0" ? label : displayconvertacc + label
             self.displayconvertacc = self.formatNumber(value: self.displayconvertacc)
              self.getFontSizeConvertacc()
@@ -578,11 +581,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertacc() {
         switch self.displayconvertacc.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeacc = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeacc = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeacc = 65
         default:
             break
         }
@@ -599,7 +602,7 @@ class GlobalEnvironment: ObservableObject {
     
     
     func handlekeypressare(_ calculatorButton: CalculatorButton) {
-        print("Reached convert")
+
         if calculatorButton.title == "AC" {
             self.resetconvertare()
         } else if calculatorButton.title == "DEL"{
@@ -650,7 +653,7 @@ class GlobalEnvironment: ObservableObject {
     
     func handlenumberselectionconvertare(label: String) {
         if self.displayconvertare.count == 0 || self.displayconvertare.count < 9 {
-                print ("reached 22")
+  
                 self.displayconvertare = displayconvertare == "0" ? label : displayconvertare + label
             self.displayconvertare = self.formatNumber(value: self.displayconvertare)
              self.getFontSizeConvertare()
@@ -659,11 +662,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertare() {
         switch self.displayconvertacc.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeare = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeare = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeare = 65
         default:
             break
         }
@@ -680,7 +683,7 @@ class GlobalEnvironment: ObservableObject {
     
     
     func handlekeypresscook(_ calculatorButton: CalculatorButton) {
-        print("Reached convert")
+   
         if calculatorButton.title == "AC" {
             self.resetconvertcook()
         } else if calculatorButton.title == "DEL"{
@@ -731,7 +734,7 @@ class GlobalEnvironment: ObservableObject {
     
     func handlenumberselectionconvertcook(label: String) {
         if self.displayconvertcook.count == 0 || self.displayconvertcook.count < 9 {
-                print ("reached 22")
+
                 self.displayconvertcook = displayconvertcook == "0" ? label : displayconvertcook + label
             self.displayconvertcook = self.formatNumber(value: self.displayconvertcook)
              self.getFontSizeConvertcook()
@@ -740,11 +743,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertcook() {
         switch self.displayconvertcook.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizecook = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizecook = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizecook = 65
         default:
             break
         }
@@ -760,89 +763,89 @@ class GlobalEnvironment: ObservableObject {
     }
     
     
-    func handlekeypresscurr(_ calculatorButton: CalculatorButton) {
-        print("Reached convert")
-        if calculatorButton.title == "AC" {
-            self.resetconvertcurr()
-        } else if calculatorButton.title == "DEL"{
-            if displayconvertcurr != "0" && completestringconvertcurr != "0" {
-                displayconvertcurr.remove(at: displayconvertcurr.index(before: displayconvertcurr.endIndex))
-                if displayconvertcurr.count == 0 {
-                    displayconvertcurr = "0"
-                    completestringconvertcurr = "0"
-                }
-                completestringconvertcurr.remove(at: completestringconvertcurr.index(before: completestringconvertcurr.endIndex))
-            }
-            
-        } else if calculatorButton.title == "+/-" {
-            if minus_plus_convertcurr == false {
-                displayconvertcurr.insert(contentsOf: "-", at: displayconvertcurr.startIndex)
-    
-                completestringconvertcurr.insert(contentsOf: "-", at: completestringconvertcurr.startIndex)
-                minus_plus_convertcurr = true
-            }
-            
-            else if minus_plus_convertcurr == true {
-                displayconvertcurr.remove(at: displayconvertcurr.startIndex)
-                completestringconvertcurr.remove(at: completestringconvertcurr.startIndex)
-                minus_plus_convertcurr = false
-            }
-            
-        }
-            else if calculatorButton.title == "=" {
-            let expressionconvert = Expression(self.completestringconvertcurr)
-//            print ("Hello ", completestringconvert)
-            do {
-                let resultconvert = try expressionconvert.evaluate()
-                self.displayconvertcurr = formatNumber(value: String(resultconvert))
-//                print ("hi", self.displayconvert)
-                
-            }
-            catch {
-                print(error)
-            }
-        }
+//    func handlekeypresscurr(_ calculatorButton: CalculatorButton) {
+//        print("Reached convert")
+//        if calculatorButton.title == "AC" {
+//            self.resetconvertcurr()
+//        } else if calculatorButton.title == "DEL"{
+//            if displayconvertcurr != "0" && completestringconvertcurr != "0" {
+//                displayconvertcurr.remove(at: displayconvertcurr.index(before: displayconvertcurr.endIndex))
+//                if displayconvertcurr.count == 0 {
+//                    displayconvertcurr = "0"
+//                    completestringconvertcurr = "0"
+//                }
+//                completestringconvertcurr.remove(at: completestringconvertcurr.index(before: completestringconvertcurr.endIndex))
+//            }
+//
+//        } else if calculatorButton.title == "+/-" {
+//            if minus_plus_convertcurr == false {
+//                displayconvertcurr.insert(contentsOf: "-", at: displayconvertcurr.startIndex)
+//
+//                completestringconvertcurr.insert(contentsOf: "-", at: completestringconvertcurr.startIndex)
+//                minus_plus_convertcurr = true
+//            }
+//
+//            else if minus_plus_convertcurr == true {
+//                displayconvertcurr.remove(at: displayconvertcurr.startIndex)
+//                completestringconvertcurr.remove(at: completestringconvertcurr.startIndex)
+//                minus_plus_convertcurr = false
+//            }
+//
+//        }
+//            else if calculatorButton.title == "=" {
+//            let expressionconvert = Expression(self.completestringconvertcurr)
+////            print ("Hello ", completestringconvert)
+//            do {
+//                let resultconvert = try expressionconvert.evaluate()
+//                self.displayconvertcurr = formatNumber(value: String(resultconvert))
+////                print ("hi", self.displayconvert)
+//
+//            }
+//            catch {
+//                print(error)
+//            }
+//        }
 
     
-        else if calculatorButton.title != "=" {
-            self.completestringconvertcurr += calculatorButton.title
-            self.handlenumberselectionconvertcurr(label: calculatorButton.title)
-               }
-    }
-    
-    func handlenumberselectionconvertcurr(label: String) {
-        if self.displayconvertcurr.count == 0 || self.displayconvertcurr.count < 9 {
-                print ("reached 22")
-                self.displayconvertcurr = displayconvertcurr == "0" ? label : displayconvertcurr + label
-            self.displayconvertcurr = self.formatNumber(value: self.displayconvertcurr)
-             self.getFontSizeConvertcurr()
-        }
-    }
-    func getFontSizeConvertcurr() {
-        switch self.displayconvertcurr.count {
-        case 7:
-            self.fontsize = 80
-        case 8:
-            self.fontsize = 70
-        case 9:
-            self.fontsize = 65
-        default:
-            break
-        }
-    }
-    
-    func cancelconvertcurr() {
-        self.displayconvertcurr = "0"
-        self.completestringconvertcurr = ""
-    }
-    
-    func resetconvertcurr() {
-        self.cancelconvertcurr()
-    }
+//        else if calculatorButton.title != "=" {
+//            self.completestringconvertcurr += calculatorButton.title
+//            self.handlenumberselectionconvertcurr(label: calculatorButton.title)
+//               }
+//    }
+//
+//    func handlenumberselectionconvertcurr(label: String) {
+//        if self.displayconvertcurr.count == 0 || self.displayconvertcurr.count < 9 {
+//                print ("reached 22")
+//                self.displayconvertcurr = displayconvertcurr == "0" ? label : displayconvertcurr + label
+//            self.displayconvertcurr = self.formatNumber(value: self.displayconvertcurr)
+//             self.getFontSizeConvertcurr()
+//        }
+//    }
+//    func getFontSizeConvertcurr() {
+//        switch self.displayconvertcurr.count {
+//        case 7:
+//            self.fontsize = 80
+//        case 8:
+//            self.fontsize = 70
+//        case 9:
+//            self.fontsize = 65
+//        default:
+//            break
+//        }
+//    }
+//
+//    func cancelconvertcurr() {
+//        self.displayconvertcurr = "0"
+//        self.completestringconvertcurr = ""
+//    }
+//
+//    func resetconvertcurr() {
+//        self.cancelconvertcurr()
+//    }
     
     
     func handlekeypressdat(_ calculatorButton: CalculatorButton) {
-        print("Reached convert")
+
         if calculatorButton.title == "AC" {
             self.resetconvertdat()
         } else if calculatorButton.title == "DEL"{
@@ -893,7 +896,7 @@ class GlobalEnvironment: ObservableObject {
     
     func handlenumberselectionconvertdat(label: String) {
         if self.displayconvertdat.count == 0 || self.displayconvertdat.count < 9 {
-                print ("reached 22")
+    
                 self.displayconvertdat = displayconvertdat == "0" ? label : displayconvertdat + label
             self.displayconvertdat = self.formatNumber(value: self.displayconvertdat)
              self.getFontSizeConvertdat()
@@ -902,11 +905,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertdat() {
         switch self.displayconvertdat.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizedat = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizedat = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizedat = 65
         default:
             break
         }
@@ -923,7 +926,7 @@ class GlobalEnvironment: ObservableObject {
     
     
     func handlekeypressdens(_ calculatorButton: CalculatorButton) {
-        print("Reached convert")
+        
         if calculatorButton.title == "AC" {
             self.resetconvertdens()
         } else if calculatorButton.title == "DEL"{
@@ -983,11 +986,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertdens() {
         switch self.displayconvertdens.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizedens = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizedens = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizedens = 65
         default:
             break
         }
@@ -1145,11 +1148,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertener() {
         switch self.displayconvertener.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeener = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeener = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeener = 65
         default:
             break
         }
@@ -1226,11 +1229,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertfreq() {
         switch self.displayconvertfreq.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizefreq = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizefreq = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizefreq = 65
         default:
             break
         }
@@ -1307,11 +1310,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertfuel() {
         switch self.displayconvertfuel.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizefuel = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizefuel = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizefuel = 65
         default:
             break
         }
@@ -1388,11 +1391,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertillu() {
         switch self.displayconvertillu.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeillu = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeillu = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeillu = 65
         default:
             break
         }
@@ -1469,11 +1472,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertleng() {
         switch self.displayconvertleng.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeleng = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeleng = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeleng = 65
         default:
             break
         }
@@ -1550,11 +1553,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertmetr() {
         switch self.displayconvertmetr.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizemetr = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizemetr = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizemetr = 65
         default:
             break
         }
@@ -1631,11 +1634,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertnetw() {
         switch self.displayconvertnetw.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizenetw = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizenetw = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizenetw = 65
         default:
             break
         }
@@ -1712,11 +1715,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertplain() {
         switch self.displayconvertplain.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeplain = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeplain = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeplain = 65
         default:
             break
         }
@@ -1793,11 +1796,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertpower() {
         switch self.displayconvertpower.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizepower = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizepower = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizepower = 65
         default:
             break
         }
@@ -1874,11 +1877,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertpress() {
         switch self.displayconvertpress.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizepress = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizepress = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizepress = 65
         default:
             break
         }
@@ -1955,11 +1958,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertradi() {
         switch self.displayconvertradi.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeradi = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeradi = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeradi = 65
         default:
             break
         }
@@ -2036,11 +2039,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertradio() {
         switch self.displayconvertradio.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeradio = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeradio = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeradio = 65
         default:
             break
         }
@@ -2117,11 +2120,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertspeed() {
         switch self.displayconvertspeed.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizespeed = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizespeed = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizespeed = 65
         default:
             break
         }
@@ -2198,11 +2201,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConverttemp() {
         switch self.displayconverttemp.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizetemp = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizetemp = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizetemp = 65
         default:
             break
         }
@@ -2279,11 +2282,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConverttime() {
         switch self.displayconverttime.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizetime = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizetime = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizetime = 65
         default:
             break
         }
@@ -2360,11 +2363,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertvolume() {
         switch self.displayconvertvolume.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizevolume = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizevolume = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizevolume = 65
         default:
             break
         }
@@ -2441,11 +2444,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertweight() {
         switch self.displayconvertweight.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizeweight = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizeweight = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizeweight = 65
         default:
             break
         }
@@ -2522,11 +2525,11 @@ class GlobalEnvironment: ObservableObject {
     func getFontSizeConvertbase() {
         switch self.displayconvertbase.count {
         case 7:
-            self.fontsize = 80
+            self.fontsizebase = 80
         case 8:
-            self.fontsize = 70
+            self.fontsizebase = 70
         case 9:
-            self.fontsize = 65
+            self.fontsizebase = 65
         default:
             break
         }
@@ -2539,6 +2542,87 @@ class GlobalEnvironment: ObservableObject {
     
     func resetconvertbase() {
         self.cancelconvertbase()
+    }
+    
+    func handlekeypresscurrency(_ calculatorButton: CalculatorButton) {
+        print("Reached convert")
+        if calculatorButton.title == "AC" {
+            self.resetconvertcurrency()
+        } else if calculatorButton.title == "DEL"{
+            if displayconvertcurrency != "0" && completestringconvertcurrency != "0" {
+                displayconvertcurrency.remove(at: displayconvertcurrency.index(before: displayconvertcurrency.endIndex))
+                if displayconvertcurrency.count == 0 {
+                    displayconvertcurrency = "0"
+                    completestringconvertcurrency = "0"
+                }
+                completestringconvertcurrency.remove(at: completestringconvertcurrency.index(before: completestringconvertcurrency.endIndex))
+            }
+            
+        } else if calculatorButton.title == "+/-" {
+            if minus_plus_convertcurrency == false {
+                displayconvertcurrency.insert(contentsOf: "-", at: displayconvertcurrency.startIndex)
+    
+                completestringconvertcurrency.insert(contentsOf: "-", at: completestringconvertcurrency.startIndex)
+                minus_plus_convertcurrency = true
+            }
+            
+            else if minus_plus_convertcurrency == true {
+                displayconvertcurrency.remove(at: displayconvertcurrency.startIndex)
+                completestringconvertcurrency.remove(at: completestringconvertcurrency.startIndex)
+                minus_plus_convertcurrency = false
+            }
+            
+        }
+            else if calculatorButton.title == "=" {
+            let expressionconvert = Expression(self.completestringconvertcurrency)
+            print ("Hello ", completestringconvert)
+            do {
+                let resultconvert = try expressionconvert.evaluate()
+                self.displayconvertcurrency = formatNumber(value: String(resultconvert))
+                print ("hi", self.displayconvert)
+                
+            }
+            catch {
+                print(error)
+            }
+        }
+
+    
+        else if calculatorButton.title != "=" {
+           
+            self.completestringconvertcurrency += calculatorButton.title
+            self.handlenumberselectionconvertcurrency(label: calculatorButton.title)
+               }
+    }
+    
+    func handlenumberselectionconvertcurrency(label: String) {
+        if self.displayconvertcurrency.count == 0 || self.displayconvertcurrency.count < 9 {
+              
+                self.displayconvertcurrency = displayconvertcurrency == "0" ? label : displayconvertcurrency + label
+            self.displayconvertcurrency = self.formatNumber(value: self.displayconvertcurrency)
+             self.getFontSizeConvertcurrency()
+        }
+    }
+    func getFontSizeConvertcurrency() {
+        switch self.displayconvertcurrency.count {
+        case 7:
+            self.fontsizecurrency = 80
+        case 8:
+            self.fontsizecurrency = 70
+        case 9:
+            self.fontsizecurrency = 65
+        default:
+            break
+        }
+    }
+    
+    func cancelconvertcurrency() {
+        self.displayconvertcurrency = "0"
+        self.completestringconvertcurrency = ""
+    }
+    
+    func resetconvertcurrency() {
+        self.cancelconvertcurrency()
     }
     
     
@@ -2612,7 +2696,7 @@ struct ContentView: View {
             }  else if viewRouter.currentPage == "Speed" {
                 Speed()
             } else if viewRouter.currentPage == "Currency" {
-                Currency()
+                CurrencyAPI()
             } else if viewRouter.currentPage == "Temperature" {
                 Temperature()
             } else if viewRouter.currentPage == "Acceleration" {

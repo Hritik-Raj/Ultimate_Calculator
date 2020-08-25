@@ -113,8 +113,8 @@
 //
 //                            Button(action: {
 //                                self.viewRouter.currentPage = "page_basic"
-//                                print ("lololol")
-//                                print(self.viewRouter.currentPage)
+//                                  ("lololol")
+//                                 (self.viewRouter.currentPage)
 //                            }) {
 //                            Text("Basic")
 //                            }.font(.system(size: 18))

@@ -11,7 +11,7 @@ import SwiftUI
 
 enum ConvertorButton: String {
 
-case Acceleration, Area, Cooking, Currency, Data, Density
+case Acceleration, Area, Cooking, Currency_Convertor, Data, Density
 case Electric_Current, Energy, Frequency, Fuel_Consumption, Illuminance, Length
 case Metric_Prefix, Network_Speed, Plain_Angle, Power, Pressure, Radition_Dose
 case Radioactivity, Speed, Temperature, Time, Volume, Weight, Base_Conversions
@@ -22,7 +22,7 @@ var title: String {
         case .Acceleration: return "Acceleration"
         case .Area: return "Area"
         case .Cooking: return "Cooking"
-        case .Currency: return "Currency"
+//        case .Currency: return "Currency"
         case .Data: return "Data"
         case .Density: return "Density"
         case .Electric_Current: return "Electric Current"
@@ -43,6 +43,7 @@ var title: String {
         case .Time: return "Time"
         case .Volume: return "Volume"
         case .Weight: return "Weight"
+        case .Currency_Convertor: return "Currency Convertor"
         default:
             return "Base Conversions"
         }
@@ -55,7 +56,7 @@ struct ContentViewConvertor : View {
     @EnvironmentObject var viewRouter: ViewRouter
     
     let buttons_convertor: [ConvertorButton] = [
-        .Acceleration, .Area, .Cooking, .Currency, .Data, .Density, .Electric_Current, .Energy, .Frequency, .Fuel_Consumption, .Illuminance, .Length,
+        .Acceleration, .Area, .Cooking, .Data, .Density, .Electric_Current, .Energy, .Frequency, .Fuel_Consumption, .Illuminance, .Length,
         .Metric_Prefix, .Network_Speed, .Plain_Angle, .Power, .Pressure, .Radition_Dose, .Radioactivity, .Speed, .Temperature, .Time, .Volume,
         .Weight, .Base_Conversions
     ]
@@ -97,6 +98,17 @@ struct ContentViewConvertor : View {
                 
                 HStack {
                               Text("Convertor").font(.system(size: 14))
+                    
+                              Button(action: {
+                                self.viewRouter.currentPage = "Currency Convert"
+//                                ConvertorOptionButtonView(button: .Currency_Convertor)
+                              }) {
+                              Text("Currency Convert")
+                              }.font(.system(size: 18))
+                              .frame(width: (UIScreen.main.bounds.width - 5 * 12)/4, height: ((UIScreen.main.bounds.width - 5 * 12)/4)*0.5)
+                              .foregroundColor(.white)
+                              .background(Color.gray)
+                              .cornerRadius((UIScreen.main.bounds.width - 5 * 12)/4)
                               
                               Button(action: {self.viewRouter.currentPage = "page_settings"}) {
                               Text("Settings")
