@@ -50,7 +50,8 @@ struct Density: View {
                                 Button(action: {
                                     self.ShowUnit2.toggle()
                                 }) {
-                                    Text(self.DisplayUnit2)
+                                    //                                    Text(self.DisplayUnit2 + "  " + type(env.displayconvertacc, self.DisplayUnit1, self.DisplayUnit2))
+                                    Text(self.DisplayUnit2 + "  ")
                                     }
                                     .sheet(isPresented: $ShowUnit2) {
                                         ModalDensity(isPresented: self.$ShowUnit1, isPresented1: self.$ShowUnit1, isPresented2: self.$ShowUnit2, currentUnit1: self.$DisplayUnit1, currentUnit2: self.$DisplayUnit2)

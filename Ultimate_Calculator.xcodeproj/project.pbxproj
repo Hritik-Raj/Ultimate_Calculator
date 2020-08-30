@@ -34,15 +34,12 @@
 		55A04DA024E5FD570044C248 /* ConvertorOptionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A04D9F24E5FD570044C248 /* ConvertorOptionButtonView.swift */; };
 		55A04DA224E632F10044C248 /* ConvertorCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A04DA124E632F10044C248 /* ConvertorCalculations.swift */; };
 		55A04DA524E64DBB0044C248 /* ModalView in Frameworks */ = {isa = PBXBuildFile; productRef = 55A04DA424E64DBB0044C248 /* ModalView */; };
-		55A04DA724E6E97F0044C248 /* ModalUnit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A04DA624E6E97F0044C248 /* ModalUnit1.swift */; };
-		55A04DA924E6E9900044C248 /* ModalUnit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A04DA824E6E9900044C248 /* ModalUnit2.swift */; };
 		55A04DAC24E7123B0044C248 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 55A04DAB24E7123B0044C248 /* PanModal */; };
 		55B6AA2424E73786006520B8 /* NeumorphismUI in Frameworks */ = {isa = PBXBuildFile; productRef = 55B6AA2324E73786006520B8 /* NeumorphismUI */; };
 		55B6AA2724E73EFF006520B8 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 55B6AA2624E73EFF006520B8 /* BottomBar-SwiftUI */; };
 		55B6AA2924E74805006520B8 /* Acceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA2824E74805006520B8 /* Acceleration.swift */; };
 		55B6AA2B24E74811006520B8 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA2A24E74811006520B8 /* Area.swift */; };
 		55B6AA2D24E74840006520B8 /* Cooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA2C24E74840006520B8 /* Cooking.swift */; };
-		55B6AA2F24E74854006520B8 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA2E24E74854006520B8 /* Currency.swift */; };
 		55B6AA3124E74862006520B8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA3024E74862006520B8 /* Data.swift */; };
 		55B6AA3324E74882006520B8 /* Density.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA3224E74882006520B8 /* Density.swift */; };
 		55B6AA3524E7489A006520B8 /* Electric_Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA3424E7489A006520B8 /* Electric_Current.swift */; };
@@ -62,12 +59,10 @@
 		55B6AA5324E74A33006520B8 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5224E74A33006520B8 /* Time.swift */; };
 		55B6AA5524E74A8E006520B8 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5424E74A8E006520B8 /* Volume.swift */; };
 		55B6AA5724E74A9F006520B8 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5624E74A9F006520B8 /* Weight.swift */; };
-		55B6AA5924E74AB2006520B8 /* Base_Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5824E74AB2006520B8 /* Base_Conversions.swift */; };
 		55B6AA5B24E75083006520B8 /* Plain_Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5A24E75083006520B8 /* Plain_Angle.swift */; };
 		55B6AA5D24E7B08A006520B8 /* ModalAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5C24E7B08A006520B8 /* ModalAcceleration.swift */; };
 		55B6AA5F24E7B09A006520B8 /* ModalArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA5E24E7B09A006520B8 /* ModalArea.swift */; };
 		55B6AA6124E7B0B1006520B8 /* ModalCooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6024E7B0B1006520B8 /* ModalCooking.swift */; };
-		55B6AA6324E7B0C2006520B8 /* ModalCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6224E7B0C2006520B8 /* ModalCurrency.swift */; };
 		55B6AA6524E7B0D6006520B8 /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6424E7B0D6006520B8 /* ModalData.swift */; };
 		55B6AA6724E7B10D006520B8 /* ModalDensity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6624E7B10D006520B8 /* ModalDensity.swift */; };
 		55B6AA6924E7B146006520B8 /* ModalElectric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA6824E7B146006520B8 /* ModalElectric.swift */; };
@@ -87,7 +82,6 @@
 		55B6AA8524E7B2DE006520B8 /* ModalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8424E7B2DE006520B8 /* ModalTime.swift */; };
 		55B6AA8724E7B2F5006520B8 /* ModalVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8624E7B2F5006520B8 /* ModalVolume.swift */; };
 		55B6AA8924E7B308006520B8 /* ModalWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8824E7B308006520B8 /* ModalWeight.swift */; };
-		55B6AA8B24E7B31F006520B8 /* ModalBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8A24E7B31F006520B8 /* ModalBase.swift */; };
 		55B6AA8F24E7B8CA006520B8 /* ModalPlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA8E24E7B8C9006520B8 /* ModalPlain.swift */; };
 		55B6AA9124E9D566006520B8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6AA9024E9D566006520B8 /* SearchBarView.swift */; };
 		55C9B40824EB95B3002E6B87 /* CurrencyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9B40724EB95B3002E6B87 /* CurrencyAPI.swift */; };
@@ -151,12 +145,9 @@
 		55A04D9B24E5E4190044C248 /* ConvertorButtonCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertorButtonCircle.swift; sourceTree = "<group>"; };
 		55A04D9F24E5FD570044C248 /* ConvertorOptionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertorOptionButtonView.swift; sourceTree = "<group>"; };
 		55A04DA124E632F10044C248 /* ConvertorCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertorCalculations.swift; sourceTree = "<group>"; };
-		55A04DA624E6E97F0044C248 /* ModalUnit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalUnit1.swift; sourceTree = "<group>"; };
-		55A04DA824E6E9900044C248 /* ModalUnit2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalUnit2.swift; sourceTree = "<group>"; };
 		55B6AA2824E74805006520B8 /* Acceleration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acceleration.swift; sourceTree = "<group>"; };
 		55B6AA2A24E74811006520B8 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		55B6AA2C24E74840006520B8 /* Cooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking.swift; sourceTree = "<group>"; };
-		55B6AA2E24E74854006520B8 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		55B6AA3024E74862006520B8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		55B6AA3224E74882006520B8 /* Density.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Density.swift; sourceTree = "<group>"; };
 		55B6AA3424E7489A006520B8 /* Electric_Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electric_Current.swift; sourceTree = "<group>"; };
@@ -176,12 +167,10 @@
 		55B6AA5224E74A33006520B8 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		55B6AA5424E74A8E006520B8 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		55B6AA5624E74A9F006520B8 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
-		55B6AA5824E74AB2006520B8 /* Base_Conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_Conversions.swift; sourceTree = "<group>"; };
 		55B6AA5A24E75083006520B8 /* Plain_Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plain_Angle.swift; sourceTree = "<group>"; };
 		55B6AA5C24E7B08A006520B8 /* ModalAcceleration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAcceleration.swift; sourceTree = "<group>"; };
 		55B6AA5E24E7B09A006520B8 /* ModalArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalArea.swift; sourceTree = "<group>"; };
 		55B6AA6024E7B0B1006520B8 /* ModalCooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCooking.swift; sourceTree = "<group>"; };
-		55B6AA6224E7B0C2006520B8 /* ModalCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCurrency.swift; sourceTree = "<group>"; };
 		55B6AA6424E7B0D6006520B8 /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
 		55B6AA6624E7B10D006520B8 /* ModalDensity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDensity.swift; sourceTree = "<group>"; };
 		55B6AA6824E7B146006520B8 /* ModalElectric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalElectric.swift; sourceTree = "<group>"; };
@@ -201,7 +190,6 @@
 		55B6AA8424E7B2DE006520B8 /* ModalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTime.swift; sourceTree = "<group>"; };
 		55B6AA8624E7B2F5006520B8 /* ModalVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalVolume.swift; sourceTree = "<group>"; };
 		55B6AA8824E7B308006520B8 /* ModalWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWeight.swift; sourceTree = "<group>"; };
-		55B6AA8A24E7B31F006520B8 /* ModalBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalBase.swift; sourceTree = "<group>"; };
 		55B6AA8E24E7B8C9006520B8 /* ModalPlain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPlain.swift; sourceTree = "<group>"; };
 		55B6AA9024E9D566006520B8 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		55C9B40724EB95B3002E6B87 /* CurrencyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAPI.swift; sourceTree = "<group>"; };
@@ -303,12 +291,9 @@
 				55A04D9B24E5E4190044C248 /* ConvertorButtonCircle.swift */,
 				55A04D9F24E5FD570044C248 /* ConvertorOptionButtonView.swift */,
 				55A04DA124E632F10044C248 /* ConvertorCalculations.swift */,
-				55A04DA624E6E97F0044C248 /* ModalUnit1.swift */,
-				55A04DA824E6E9900044C248 /* ModalUnit2.swift */,
 				55B6AA2824E74805006520B8 /* Acceleration.swift */,
 				55B6AA2A24E74811006520B8 /* Area.swift */,
 				55B6AA2C24E74840006520B8 /* Cooking.swift */,
-				55B6AA2E24E74854006520B8 /* Currency.swift */,
 				55B6AA3024E74862006520B8 /* Data.swift */,
 				55B6AA3224E74882006520B8 /* Density.swift */,
 				55B6AA3424E7489A006520B8 /* Electric_Current.swift */,
@@ -328,12 +313,10 @@
 				55B6AA5224E74A33006520B8 /* Time.swift */,
 				55B6AA5424E74A8E006520B8 /* Volume.swift */,
 				55B6AA5624E74A9F006520B8 /* Weight.swift */,
-				55B6AA5824E74AB2006520B8 /* Base_Conversions.swift */,
 				55B6AA5A24E75083006520B8 /* Plain_Angle.swift */,
 				55B6AA5C24E7B08A006520B8 /* ModalAcceleration.swift */,
 				55B6AA5E24E7B09A006520B8 /* ModalArea.swift */,
 				55B6AA6024E7B0B1006520B8 /* ModalCooking.swift */,
-				55B6AA6224E7B0C2006520B8 /* ModalCurrency.swift */,
 				55B6AA6424E7B0D6006520B8 /* ModalData.swift */,
 				55B6AA6624E7B10D006520B8 /* ModalDensity.swift */,
 				55B6AA6824E7B146006520B8 /* ModalElectric.swift */,
@@ -353,7 +336,6 @@
 				55B6AA8624E7B2F5006520B8 /* ModalVolume.swift */,
 				55B6AA7224E7B1EE006520B8 /* ModalLength.swift */,
 				55B6AA8824E7B308006520B8 /* ModalWeight.swift */,
-				55B6AA8A24E7B31F006520B8 /* ModalBase.swift */,
 				55B6AA8E24E7B8C9006520B8 /* ModalPlain.swift */,
 				55B6AA9024E9D566006520B8 /* SearchBarView.swift */,
 				555C5BCD24D0B774009055B4 /* Preview Content */,
@@ -684,7 +666,6 @@
 				55B6AA5D24E7B08A006520B8 /* ModalAcceleration.swift in Sources */,
 				55B6AA3D24E748DE006520B8 /* Illuminance.swift in Sources */,
 				55B6AA8F24E7B8CA006520B8 /* ModalPlain.swift in Sources */,
-				55B6AA5924E74AB2006520B8 /* Base_Conversions.swift in Sources */,
 				5560B72824DB5C6000A55ED8 /* ContentViewTheme.swift in Sources */,
 				55C9B41024EF1896002E6B87 /* ConvertorViewModel.swift in Sources */,
 				55B6AA3724E748A8006520B8 /* Energy.swift in Sources */,
@@ -692,10 +673,8 @@
 				55B6AA6B24E7B15E006520B8 /* ModalEnergy.swift in Sources */,
 				55B6AA5724E74A9F006520B8 /* Weight.swift in Sources */,
 				555C5BC824D0B771009055B4 /* SceneDelegate.swift in Sources */,
-				55B6AA2F24E74854006520B8 /* Currency.swift in Sources */,
 				55C9B40824EB95B3002E6B87 /* CurrencyAPI.swift in Sources */,
 				55B6AA7B24E7B252006520B8 /* ModalPressure.swift in Sources */,
-				55A04DA924E6E9900044C248 /* ModalUnit2.swift in Sources */,
 				55A04D9C24E5E4190044C248 /* ConvertorButtonCircle.swift in Sources */,
 				55B6AA8924E7B308006520B8 /* ModalWeight.swift in Sources */,
 				55A04D9624E409720044C248 /* MainConvertorView.swift in Sources */,
@@ -711,7 +690,6 @@
 				55B6AA6724E7B10D006520B8 /* ModalDensity.swift in Sources */,
 				55B6AA6F24E7B1A7006520B8 /* ModalFuel.swift in Sources */,
 				55C9B41224EF220E002E6B87 /* CurrencyAPIModal.swift in Sources */,
-				55A04DA724E6E97F0044C248 /* ModalUnit1.swift in Sources */,
 				55B6AA8724E7B2F5006520B8 /* ModalVolume.swift in Sources */,
 				55B6AA6D24E7B16D006520B8 /* ModalFrequency.swift in Sources */,
 				55B6AA2D24E74840006520B8 /* Cooking.swift in Sources */,
@@ -742,12 +720,10 @@
 				55B6AA7324E7B1EE006520B8 /* ModalLength.swift in Sources */,
 				55B6AA7D24E7B280006520B8 /* ModalRadiation.swift in Sources */,
 				55B6AA7524E7B20B006520B8 /* ModalMetric.swift in Sources */,
-				55B6AA6324E7B0C2006520B8 /* ModalCurrency.swift in Sources */,
 				55B6AA4B24E749DA006520B8 /* Radiation_Dose.swift in Sources */,
 				55B6AA3124E74862006520B8 /* Data.swift in Sources */,
 				55B6AA4F24E74A14006520B8 /* Speed.swift in Sources */,
 				55B6AA7924E7B23C006520B8 /* ModalPower.swift in Sources */,
-				55B6AA8B24E7B31F006520B8 /* ModalBase.swift in Sources */,
 				55A04D9A24E5E3ED0044C248 /* ConvertorButtonSquare.swift in Sources */,
 				55B6AA3F24E748F3006520B8 /* Length.swift in Sources */,
 			);

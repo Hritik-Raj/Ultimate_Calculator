@@ -2739,8 +2739,7 @@ struct ContentView: View {
                 Volume()
             } else if viewRouter.currentPage == "Weight" {
                 Weight()
-            } else if viewRouter.currentPage == "Base Conversions" {
-                Base_Conversions()
+            
             } else if viewRouter.currentPage == "Currency Convert" {
                 CurrencyAPI()
             }

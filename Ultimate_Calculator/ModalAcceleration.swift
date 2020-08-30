@@ -15,7 +15,7 @@ struct ModalAcceleration: View {
         @Binding var currentUnit1: String
         @Binding var currentUnit2: String
         let accelerationarray =
-            ["Centigal, cGal", "Decigal, dGal", "Decimeter/Second², dm/s²", "Earth Gravity, g", "Foot/Second², fps²", "Galileo, Gal", "Inch/Second², ips²", "Kilometer/Hour², km/h²", "Kilometer/Second², km/s²", "Knot/Second, kn/s", "Microgal, μgal", "Meter/Second², m/s²", "Mile/Hour Minute, mph/min", "Mile/Hour Second, mph/s", "Mile/Second², mps²", "Milligal, mGal", "Yard/Second², yd/s²" ]
+            ["Centigal, cGal", "Decigal, dGal", "Decimeter/Second², dm/s²", "Earth Gravity, g", "Foot/Second², fps²", "Galileo, Gal", "Inch/Second², ips²", "Kilometer/Hour², km/h²", "Kilometer/Second², km/s²", "Knot/Second, kn/s", "Microgal, μGal", "Meter/Second², m/s²", "Mile/Hour Minute, mph/min", "Mile/Hour Second, mph/s", "Mile/Second², mps²", "Milligal, mGal", "Yard/Second², yd/s²" ]
 
         @State private var searchTerm : String = ""
 
