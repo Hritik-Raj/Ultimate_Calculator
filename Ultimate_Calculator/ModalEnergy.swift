@@ -15,7 +15,7 @@ struct ModalEnergy: View {
         @Binding var currentUnit1: String
         @Binding var currentUnit2: String
         let energyarray =
-            ["Btus, btu", "Calories, cal", "Electronvolt, eV", "Ergs, erg", "Foot-Poundal, ft.pdl", "Foot-Pounds, ft·lb", "Gigawatt, GW", "Horsepower, hp", "Inches Ounce, in·oz", "Inches Pound, in·lb", "Joules, J", "Kilocaloriesm kCal", "Kilogram-Meters, kg m", "Kilojoule, kJ", "Kilowatt, kW", "Megacalories, Mcal", "Megatons, MT", "Newton-Meters, N m", "q, q", "Watt, W"]
+            ["Btus, btu", "Calories, cal", "Electronvolt, eV", "Ergs, erg", "Foot-Poundal, ft·pdl", "Foot-Pounds, ft·lb", "Gigawatt, GW", "Horsepower, hp", "Inches Ounce, in·oz", "Inches Pound, in·lb", "Joules, J", "Kilocalories, kCal", "Kilogram-Meters, kg m", "Kilojoule, kJ", "Kilowatt, kW", "Megacalories, Mcal", "Megatons, MT", "Newton-Meters, N m", "q, q", "Watt, W"]
 
         @State private var searchTerm : String = ""
 

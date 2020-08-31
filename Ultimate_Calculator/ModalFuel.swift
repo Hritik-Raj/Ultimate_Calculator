@@ -15,7 +15,7 @@ struct ModalFuel: View {
         @Binding var currentUnit1: String
         @Binding var currentUnit2: String
         let fuelarray =
-        ["Gallons (UK)/100 Kilometers, UK gal/100 km", "Gallons (UK)/100 Miles, UK gal/100 mil", "Gallons (US)/100 Kilometers, US gal/100 km", "Gallons (US)/100 Miles, UK gal/100 mil", "Kilometers/Liter, km/l", "Liters/100 Kilometers, l/100 km", "Liters/100 Miles, l/100 mil", "Miles/Gallon (UK), mil/UK gal", "Miles/Gallon (US), mil/US gal", "Miles/Liter, mil/l"]
+        ["Gallons (UK)/100 Kilometers, UK gal/100 km", "Gallons (UK)/100 Miles, UK gal/100 mil", "Gallons (US)/100 Kilometers, US gal/100 km", "Gallons (US)/100 Miles, US gal/100 mil", "Kilometers/Gallon (UK), km/UK gal", "Kilometers/Gallon (US), km/US gal", "Kilometers/Liter, km/l", "Liters/100 Kilometers, l/100 km", "Liters/100 Miles, l/100 mil", "Miles/Gallon (UK), mil/UK gal", "Miles/Gallon (US), mil/US gal", "Miles/Liter, mil/l"]
 
         @State private var searchTerm : String = ""
 

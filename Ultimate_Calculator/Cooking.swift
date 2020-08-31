@@ -270,12 +270,6 @@ struct Cooking_Previews: PreviewProvider {
 public final class UnitCooking: Dimension {
     
     
-    
-
-    //     ["Bushels, bu", "Centiliters, cl", "Cups, cup", "Cups (Canada), Can cup", "Cups (UK), UK cup", "Cups (US), US cup", "Deciliters, dl", "Drops, Drop", "Fifths, fifth", "Fluid Ounces (UK), UK fl oz", "Fluid Ounces (US), US fl oz", "Gallons (UK), UK gal", "Gallons (US), US gal", "Gills, gill", "Jiggers, jigger", "Liters, l", "Milliliters, ml", "Pecks, peck", "Pints, pt", "Pints (US Dry), dry US pt", "Pints (US Liquid), liquid US pt", "Quarts, qt", "Tablespoons, tbsp", "Tablespoons (UK), UK tbsp", "Tablespoons (US), US tbsp", "Teaspoons, tspn", "Teaspoons (UK), UK tspn", "Teaspoons (US), US tspn"]
-    
-    
-    
     static let bushels = UnitCooking(symbol: "", converter: UnitConverterLinear(coefficient: 18.927))
     static let centiliters = UnitCooking(symbol: "", converter: UnitConverterLinear(coefficient: 0.01))
     static let cups = UnitCooking(symbol: "", converter: UnitConverterLinear(coefficient: 0.25))
@@ -304,11 +298,6 @@ public final class UnitCooking: Dimension {
     static let tspn = UnitCooking(symbol: "", converter: UnitConverterLinear(coefficient: 0.005))
     static let uktspn = UnitCooking(symbol: "", converter: UnitConverterLinear(coefficient: 0.0035))
     static let ustspn = UnitCooking(symbol: "", converter: UnitConverterLinear(coefficient: 0.0049))
-    
-//    override class func baseUnit() -> UnitCooking {
-//    return liters
-//    }
-//    static let baseUnit = liters
     
     public override class func baseUnit() -> UnitCooking {
         return liters

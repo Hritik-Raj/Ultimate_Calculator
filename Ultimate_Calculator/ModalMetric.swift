@@ -15,7 +15,7 @@ struct ModalMetric: View {
         @Binding var currentUnit1: String
         @Binding var currentUnit2: String
         let metricarray =
-            ["Acto, a", "Centi, c", "Deca, da", "Exa, E", "Femto, f", "Giga, G", "Hecto, h", "Kilo, k", "Mega, M", "Micro, μ", "Milli, m", "Nano, n", "One, One", "Peta, P", "Pico, p", "Tera, T", "Yocto, y", "Yotta, Y", "Zepta, z", "Zetta, Z"]
+            ["Acto, a", "Centi, c", "Deca, da", "Deci, d", "Exa, E", "Femto, f", "Giga, G", "Hecto, h", "Kilo, k", "Mega, M", "Micro, μ", "Milli, m", "Nano, n", "One, One", "Peta, P", "Pico, p", "Tera, T", "Yocto, y", "Yotta, Y", "Zepta, z", "Zetta, Z"]
 
         @State private var searchTerm : String = ""
 

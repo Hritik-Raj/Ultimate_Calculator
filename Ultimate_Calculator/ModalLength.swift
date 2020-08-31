@@ -15,7 +15,7 @@ struct ModalLength: View {
         @Binding var currentUnit1: String
         @Binding var currentUnit2: String
         let lengtharray =
-        ["Angstrom, Å", "Astronomical Units, au", "Centimeter, cm", "Chains, ch", "Fathom, ftm", "Foot, ft", "Inch, in", "Kilometer, km", "Leagues, l", "Light Seconds, light-second", "Light days, light-day", "Light hours, light-hour", "Light minutes, light-minute", "Meter, m", "Microinches, μin", "Micron, μ", "Mile, mi", "Mile (nautical), nmi", "Millimeter, mm", "Nanometers, nm", "Nautical Leagues, nl", "Nautical Miles (UK), nmil UK", "Parsecs, pc", "Picometers, pm", "Rods, Rods", "Step, sl", "Thou, th" ]
+        ["Angstrom, Å", "Astronomical Units, au", "Centimeter, cm", "Chains, ch", "Fathom, ftm", "Foot, ft", "Inch, in", "Kilometer, km", "Leagues, l", "Light Seconds, light-second", "Light days, light-day", "Light hours, light-hour", "Light minutes, light-minute", "Meter, m", "Microinches, μin", "Micron, μ", "Mile, mi", "Mile (nautical), nmi", "Millimeter, mm", "Nanometers, nm", "Nautical Leagues, nl", "Nautical Miles (UK), nmil UK", "Parsecs, pc", "Picometers, pm", "Rods, Rods", "Step, sl", "Thou, th", "Yard, yd"]
 
         @State private var searchTerm : String = ""
 
