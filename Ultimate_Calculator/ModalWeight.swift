@@ -15,7 +15,7 @@ struct ModalWeight: View {
       @Binding var currentUnit1: String
       @Binding var currentUnit2: String
         let weightarray =
-            ["Carat, kt", "Carat (UK), UK kt", "Centigrams, cg", "Dalton, Da", "Grains, gr", "Gram, g", "Kilogram, kg", "Long Ton (UK), t", "Metric Ton, t", "Micrograms, μg", "Milligrams, mg", "Nanograms, ng", "Ounce (US), oz", "Pound (US), lb", "Short Ton (US), t", "Stone, st", "Troy Ounces, oz t"]
+            ["Carat, kt", "Carat (UK), UK kt", "Centigrams, cg", "Grains, gr", "Gram, g", "Kilogram, kg", "Long Ton (UK), t", "Metric Ton, t", "Micrograms, μg", "Milligrams, mg", "Nanograms, ng", "Ounce (US), oz", "Pound (US), lb", "Short Ton (US), t", "Stone, st", "Troy Ounces, oz t"]
 
         @State private var searchTerm : String = ""
 

@@ -16,7 +16,7 @@ struct ModalNetwork: View {
         @Binding var currentUnit2: String
         let networkarray =
         ["Bit/Second, bps", "Byte/Second, Bps", "Gigabit/Second, Gbps",
-         "Gigabyte/Second, GBps", "Kilobit/Second, KBps", "Megabit/Second, Mbps",
+         "Gigabyte/Second, GBps", "Kilobit/Second, Kbps", "Kilobyte/Second, KBps",  "Megabit/Second, Mbps",
          "Megabyte/Second, MBps", "Terabit/Second, Tbps", "Terabyte/Second, TBps"]
 
         @State private var searchTerm : String = ""
@@ -55,3 +55,5 @@ struct ModalNetwork: View {
 //        ModalNetwork()
 //    }
 //}
+
+
